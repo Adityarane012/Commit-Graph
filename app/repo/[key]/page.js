@@ -176,7 +176,7 @@ export default function RepoPage() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5 flex justify-center">
-        <div className="h-16 w-full max-w-[1440px] px-margin-desktop flex items-center justify-between">
+        <div className="h-16 w-full px-margin-desktop flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="font-headline-md text-headline-md tracking-tight text-on-surface hover:text-primary transition-colors">CommitGraph</Link>
             <nav className="hidden md:flex items-center gap-8 ml-8">
@@ -201,7 +201,7 @@ export default function RepoPage() {
       </header>
 
       <main className="w-full pt-16 min-h-screen bg-surface flex flex-col items-center">
-        <div className="flex flex-col w-full max-w-[1440px] px-margin-desktop font-body-md text-on-surface">
+        <div className="flex flex-col w-full px-margin-desktop font-body-md text-on-surface">
           <div className="relative w-full overflow-hidden">
             {/* Ambient Background */}
             <div className="absolute inset-0 pointer-events-none opacity-20 z-0 overflow-hidden">
