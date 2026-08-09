@@ -20,25 +20,13 @@ CommitGraph is an AI-powered web application built to automate software reverse 
    cp .env.example .env
    # Then edit .env to add your GROQ_API_KEY
    ```
-4. Note: The prototype is password protected. The hackathon access password is **`devengers2026`**.
-5. Install dependencies and run the development server:
+4. Install dependencies and run the development server:
    ```bash
    npm install
    npm run dev
    ```
 6. Navigate to `http://localhost:3000`.
 
-### ▲ Vercel Deployment
-
-CommitGraph is natively optimized for Vercel deployment with zero additional backend configuration. 
-The internal datasets are bundled into serverless functions natively.
-
-1. Push your repository to GitHub.
-2. Go to your [Vercel Dashboard](https://vercel.com/dashboard) and click **Add New > Project**.
-3. Import your `Commit-Graph` repository.
-4. Expand the **Environment Variables** section and add:
-   - `GROQ_API_KEY`: Your Groq API key.
-5. Click **Deploy**. Vercel will automatically detect Next.js, compile the serverless functions, and bundle the local JSON datasets for the API routes.
 
 ## 🛠️ Technology Stack
 
