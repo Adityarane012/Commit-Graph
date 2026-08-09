@@ -38,14 +38,6 @@ This prototype was built to complement the **UMLRev** research project (Farias e
 - **Data Visualization:** Mermaid.js (Dynamically rendered feature graphs)
 - **Data Source:** GitHub REST API
 
-## 📂 Documentation
-
-We have extensively documented the architecture, design, and research context of this project. Please explore the `Docs/` folder:
-
-- 🏗️ **[Architecture Document](Docs/ARCHITECTURE.md):** Deep dive into the 4-stage data pipeline, API routes, security considerations, and deployment strategy.
-- 🎨 **[Frontend Design System](Docs/frontend.md):** Details our "Research Grade, Hacker Vibe" aesthetic, CSS custom properties, and UI state machines.
-- 🔬 **[Problem Statement](Docs/ProblemStatement.md):** The academic context and the specific UMLRev limitation this prototype addresses.
-
 ## 🧠 How It Works
 
 1. **Fetch Commits:** We pull real commit history from GitHub (messages, diffs, file stats).
