@@ -11,6 +11,8 @@ CommitGraph is an AI-powered web application built to automate software reverse 
 
 ## 🚀 Live Demo & Local Setup
 
+**Live Hackathon Deployment:** [https://commit-graph-npd4arik6-adityarane012s-projects.vercel.app/](https://commit-graph-npd4arik6-adityarane012s-projects.vercel.app/)
+
 ### Local Development
 
 1. Clone this repository.
