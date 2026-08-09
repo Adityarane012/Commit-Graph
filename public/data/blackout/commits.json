@@ -1,0 +1,3135 @@
+{
+  "repo": {
+    "key": "blackout",
+    "name": "Blackout",
+    "owner": "Adityarane012",
+    "description": "A power outage tracking application",
+    "url": "https://github.com/Adityarane012/Blackout",
+    "commitCount": 34,
+    "fetchedAt": "2026-08-09T10:23:50.511Z"
+  },
+  "commits": [
+    {
+      "sha": "8e8dd629259e1f7687bf140047a04c5a29cd63a5",
+      "message": "fix: eliminate dead-air wait during simulation startup\n\n- Add isEngineConnecting state that flips true immediately on trigger, false in finally (never hangs on errors)\n- Move setIsRunning(true) to after backend responds so playback only starts once timeline is loaded\n- Fire granular event-log messages at every API stage (UPLINK / GRAPH / ENGINE / TIMELINE)\n- Add canvas overlay card with spinner + status copy while connecting\n- Disable + spinner on scenario dropdown and play button during connect\n- Paused banner now hidden while engine is connecting",
+      "author": "Aditya Rane",
+      "date": "2026-07-06T18:16:21Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/8e8dd629259e1f7687bf140047a04c5a29cd63a5",
+      "files": [
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 1,
+          "changes": 29
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "modified",
+          "additions": 22,
+          "deletions": 5,
+          "changes": 27
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 5,
+          "changes": 25
+        }
+      ],
+      "stats": {
+        "total": 81,
+        "additions": 70,
+        "deletions": 11
+      }
+    },
+    {
+      "sha": "4f534550c4c3c4ba214e30bf7a1b17a98062f5d3",
+      "message": "Update tech stack versions and add Mermaid architecture diagram",
+      "author": "Aditya Rane",
+      "date": "2026-07-06T17:43:59Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/4f534550c4c3c4ba214e30bf7a1b17a98062f5d3",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 33,
+          "deletions": 2,
+          "changes": 35
+        }
+      ],
+      "stats": {
+        "total": 35,
+        "additions": 33,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "eb304ef4a2b90737878091326262be52658973de",
+      "message": "Fix NameError: List not defined",
+      "author": "Aditya Rane",
+      "date": "2026-07-06T17:38:47Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/eb304ef4a2b90737878091326262be52658973de",
+      "files": [
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "ae0eb96279c9d92d47ae061f7673257304a4e325",
+      "message": "Update for demo: dashboard and components",
+      "author": "Aditya Rane",
+      "date": "2026-07-06T17:34:35Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/ae0eb96279c9d92d47ae061f7673257304a4e325",
+      "files": [
+        {
+          "filename": ".env.example",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 4,
+          "changes": 9
+        },
+        {
+          "filename": "app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 3,
+          "changes": 10
+        },
+        {
+          "filename": "app/globals.css",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 0,
+          "changes": 17
+        },
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 41,
+          "deletions": 7,
+          "changes": 48
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 43,
+          "deletions": 6,
+          "changes": 49
+        },
+        {
+          "filename": "components/network-graph.tsx",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 1,
+          "changes": 17
+        },
+        {
+          "filename": "components/workspace/left-sidebar.tsx",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 0,
+          "changes": 16
+        },
+        {
+          "filename": "components/workspace/playback-timeline.tsx",
+          "status": "modified",
+          "additions": 32,
+          "deletions": 5,
+          "changes": 37
+        },
+        {
+          "filename": "components/workspace/post-mortem-modal.tsx",
+          "status": "modified",
+          "additions": 49,
+          "deletions": 11,
+          "changes": 60
+        },
+        {
+          "filename": "components/workspace/save-architecture-modal.tsx",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0,
+          "changes": 81
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 2,
+          "changes": 16
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 57,
+          "deletions": 1,
+          "changes": 58
+        }
+      ],
+      "stats": {
+        "total": 424,
+        "additions": 379,
+        "deletions": 45
+      }
+    },
+    {
+      "sha": "625121d1f56133d5e1faa645d12e355fa04128c5",
+      "message": "fix: aggressively apply tailwind classes to clerk elements for text visibility",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:41:58Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/625121d1f56133d5e1faa645d12e355fa04128c5",
+      "files": [
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 2,
+          "changes": 12
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 2,
+          "changes": 12
+        }
+      ],
+      "stats": {
+        "total": 24,
+        "additions": 20,
+        "deletions": 4
+      }
+    },
+    {
+      "sha": "2d7c9191709816fb5d18b4e733195217cad64511",
+      "message": "Update README.md",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:13:21Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/2d7c9191709816fb5d18b4e733195217cad64511",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 2,
+          "changes": 3
+        }
+      ],
+      "stats": {
+        "total": 3,
+        "additions": 1,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "282f9216a86dc71d9fa7d1a42ef3c8bbaa6a76f0",
+      "message": "fix: explicit dark theme for clerk and add back button",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:11:56Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/282f9216a86dc71d9fa7d1a42ef3c8bbaa6a76f0",
+      "files": [
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 3,
+          "changes": 13
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 3,
+          "changes": 13
+        }
+      ],
+      "stats": {
+        "total": 26,
+        "additions": 20,
+        "deletions": 6
+      }
+    },
+    {
+      "sha": "613379fa518f53b6333c6fe3d11404b7f9a14c95",
+      "message": "feat: add dynamic cyberpunk logo for favicon",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:09:08Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/613379fa518f53b6333c6fe3d11404b7f9a14c95",
+      "files": [
+        {
+          "filename": "app/apple-icon.tsx",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "changes": 29
+        },
+        {
+          "filename": "app/icon.tsx",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "changes": 28
+        },
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 17,
+          "changes": 17
+        },
+        {
+          "filename": "next-env.d.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "public/apple-icon.png",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon-dark-32x32.png",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon-light-32x32.png",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon.svg",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 26,
+          "changes": 26
+        }
+      ],
+      "stats": {
+        "total": 102,
+        "additions": 58,
+        "deletions": 44
+      }
+    },
+    {
+      "sha": "be8a256c4c1c899d62cc54d7b8562b0ac399af78",
+      "message": "fix: apply clerk dark theme globally",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:07:58Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/be8a256c4c1c899d62cc54d7b8562b0ac399af78",
+      "files": [
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "7f89e24cd5c331b1aafce142da8f230d9e360ccf",
+      "message": "fix: delete stale pnpm-lock.yaml to let Vercel use npm",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T11:04:10Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/7f89e24cd5c331b1aafce142da8f230d9e360ccf",
+      "files": [
+        {
+          "filename": "pnpm-lock.yaml",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 3246,
+          "changes": 3246
+        }
+      ],
+      "stats": {
+        "total": 3246,
+        "additions": 0,
+        "deletions": 3246
+      }
+    },
+    {
+      "sha": "93a0546b5b9bf8964adf8b01e21bf1974a092371",
+      "message": "fix: enforce python 3.12 via .python-version",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:55:24Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/93a0546b5b9bf8964adf8b01e21bf1974a092371",
+      "files": [
+        {
+          "filename": ".python-version",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "runtime.txt",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "d1b1f0f8aaf5bb3e25f534ab580fb79a58d40e56",
+      "message": "chore: rewrite documentation and config files for perfect hackathon state",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:52:56Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/d1b1f0f8aaf5bb3e25f534ab580fb79a58d40e56",
+      "files": [
+        {
+          "filename": ".env.example",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 8,
+          "changes": 27
+        },
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 73,
+          "deletions": 64,
+          "changes": 137
+        },
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 18,
+          "changes": 36
+        }
+      ],
+      "stats": {
+        "total": 200,
+        "additions": 110,
+        "deletions": 90
+      }
+    },
+    {
+      "sha": "15ce88bb2452a4e292b51b34773beaddecdbf17e",
+      "message": "fix: upgrade dependencies for render python 3.12 compatibility",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:41:36Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/15ce88bb2452a4e292b51b34773beaddecdbf17e",
+      "files": [
+        {
+          "filename": "requirements.txt",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 7,
+          "changes": 14
+        },
+        {
+          "filename": "runtime.txt",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 15,
+        "additions": 8,
+        "deletions": 7
+      }
+    },
+    {
+      "sha": "64d7a703786d8c21d050f8bd3d9b88cfa6fab5ab",
+      "message": "chore: add .env.example template",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:24:14Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/64d7a703786d8c21d050f8bd3d9b88cfa6fab5ab",
+      "files": [
+        {
+          "filename": ".env.example",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "changes": 20
+        }
+      ],
+      "stats": {
+        "total": 20,
+        "additions": 20,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "b9c572fe20b1f1abfbb4d9a41fb2f11f847c3017",
+      "message": "docs: add graphify feature highlight",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:23:40Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/b9c572fe20b1f1abfbb4d9a41fb2f11f847c3017",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "d27232b6237fc08719bcdf5c1bc9d7ce2daf0342",
+      "message": "chore: update graphify code graph",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:22:29Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/d27232b6237fc08719bcdf5c1bc9d7ce2daf0342",
+      "files": [
+        {
+          "filename": "graphify-out/.graphify_labels.json",
+          "status": "modified",
+          "additions": 41,
+          "deletions": 1,
+          "changes": 42
+        },
+        {
+          "filename": "graphify-out/GRAPH_REPORT.md",
+          "status": "modified",
+          "additions": 235,
+          "deletions": 57,
+          "changes": 292
+        },
+        {
+          "filename": "graphify-out/graph.html",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "graphify-out/graph.json",
+          "status": "modified",
+          "additions": 19119,
+          "deletions": 12143,
+          "changes": 31262
+        },
+        {
+          "filename": "graphify-out/manifest.json",
+          "status": "modified",
+          "additions": 290,
+          "deletions": 105,
+          "changes": 395
+        }
+      ],
+      "stats": {
+        "total": 31999,
+        "additions": 19689,
+        "deletions": 12310
+      }
+    },
+    {
+      "sha": "9c3588bd464430f676f43477b50523106427c584",
+      "message": "chore: finalize repository for hackathon submission",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T10:21:14Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/9c3588bd464430f676f43477b50523106427c584",
+      "files": [
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 1,
+          "changes": 16
+        },
+        {
+          "filename": "Docs/Appflow.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 679,
+          "changes": 679
+        },
+        {
+          "filename": "Docs/Backend Schema.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 592,
+          "changes": 592
+        },
+        {
+          "filename": "Docs/Implementation plan.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 721,
+          "changes": 721
+        },
+        {
+          "filename": "Docs/PRD.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 153,
+          "changes": 153
+        },
+        {
+          "filename": "Docs/Technical Requirements Document (TRD).md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 766,
+          "changes": 766
+        },
+        {
+          "filename": "Docs/UI UX Design.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "Docs/presentation.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 603,
+          "changes": 603
+        },
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 55,
+          "deletions": 113,
+          "changes": 168
+        },
+        {
+          "filename": "app/api/parse-architecture/route.ts",
+          "status": "added",
+          "additions": 33,
+          "deletions": 0,
+          "changes": 33
+        },
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 25,
+          "changes": 30
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 25,
+          "changes": 30
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 0,
+          "changes": 17
+        },
+        {
+          "filename": "backend/db/queries.py",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 0,
+          "changes": 17
+        },
+        {
+          "filename": "backend/dependencies.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 296,
+          "deletions": 64,
+          "changes": 360
+        },
+        {
+          "filename": "backend/models/graph.py",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 1,
+          "changes": 20
+        },
+        {
+          "filename": "backend/services/intelligence_service.py",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0,
+          "changes": 81
+        },
+        {
+          "filename": "backend/services/simulation_engine.py",
+          "status": "modified",
+          "additions": 207,
+          "deletions": 103,
+          "changes": 310
+        },
+        {
+          "filename": "backend/services/validation_service.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/event-log.tsx",
+          "status": "modified",
+          "additions": 57,
+          "deletions": 27,
+          "changes": 84
+        },
+        {
+          "filename": "components/workspace/import-architecture-modal.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 5,
+          "changes": 15
+        },
+        {
+          "filename": "components/workspace/intelligence-modal.tsx",
+          "status": "added",
+          "additions": 99,
+          "deletions": 0,
+          "changes": 99
+        },
+        {
+          "filename": "components/workspace/playback-timeline.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 0,
+          "changes": 17
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 101,
+          "deletions": 55,
+          "changes": 156
+        },
+        {
+          "filename": "next-env.d.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "next.config.mjs",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "changes": 4
+        },
+        {
+          "filename": "requirements.txt",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0,
+          "changes": 12
+        },
+        {
+          "filename": "start_backend.bat",
+          "status": "added",
+          "additions": 33,
+          "deletions": 0,
+          "changes": 33
+        }
+      ],
+      "stats": {
+        "total": 5023,
+        "additions": 1086,
+        "deletions": 3937
+      }
+    },
+    {
+      "sha": "cd5cba2c7d24558678f396ebec3c73421e63ed6a",
+      "message": "feat: complete Phase 1 multi-tenant architecture scoping & full stack integration",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T07:46:38Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/cd5cba2c7d24558678f396ebec3c73421e63ed6a",
+      "files": [
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 1,
+          "changes": 11
+        },
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 33,
+          "deletions": 19,
+          "changes": 52
+        },
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "modified",
+          "additions": 178,
+          "deletions": 54,
+          "changes": 232
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "modified",
+          "additions": 178,
+          "deletions": 54,
+          "changes": 232
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 3,
+          "changes": 39
+        },
+        {
+          "filename": "backend/__pycache__/dependencies.cpython-313.pyc",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/__pycache__/graph_service.cpython-313.pyc",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-311.pyc",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-313.pyc",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/queries.py",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 9,
+          "changes": 18
+        },
+        {
+          "filename": "backend/db/utils.py",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 3,
+          "changes": 10
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 11,
+          "changes": 39
+        },
+        {
+          "filename": "backend/services/graph_service.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 18,
+          "changes": 36
+        },
+        {
+          "filename": "backend/services/simulation_engine.py",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 1,
+          "changes": 31
+        },
+        {
+          "filename": "components/docs/docs-content.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/event-log.tsx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 3,
+          "changes": 8
+        },
+        {
+          "filename": "components/landing/landing-header.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/workspace/inject-fault-modal.tsx",
+          "status": "added",
+          "additions": 168,
+          "deletions": 0,
+          "changes": 168
+        },
+        {
+          "filename": "components/workspace/left-sidebar.tsx",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 36,
+          "changes": 76
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 6,
+          "changes": 20
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 140,
+          "deletions": 16,
+          "changes": 156
+        }
+      ],
+      "stats": {
+        "total": 1134,
+        "additions": 897,
+        "deletions": 237
+      }
+    },
+    {
+      "sha": "2e05d1cc925a90376cd1d270bab7ad753b2833ac",
+      "message": "docs: Add v1.2.0 to changelog",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T06:39:22Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/2e05d1cc925a90376cd1d270bab7ad753b2833ac",
+      "files": [
+        {
+          "filename": "app/changelog/page.tsx",
+          "status": "modified",
+          "additions": 24,
+          "deletions": 0,
+          "changes": 24
+        }
+      ],
+      "stats": {
+        "total": 24,
+        "additions": 24,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "5038783c495f25f1e526b9860afc906f86f84db6",
+      "message": "feat: Integrate Clerk authentication, update Neo4j models for user persistence, and fix API docs 404",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T06:38:33Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/5038783c495f25f1e526b9860afc906f86f84db6",
+      "files": [
+        {
+          "filename": "app/dashboard/page.tsx",
+          "status": "added",
+          "additions": 194,
+          "deletions": 0,
+          "changes": 194
+        },
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 7,
+          "changes": 18
+        },
+        {
+          "filename": "app/sign-in/[[...sign-in]]/page.tsx",
+          "status": "added",
+          "additions": 103,
+          "deletions": 0,
+          "changes": 103
+        },
+        {
+          "filename": "app/sign-up/[[...sign-up]]/page.tsx",
+          "status": "added",
+          "additions": 103,
+          "deletions": 0,
+          "changes": 103
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-311.pyc",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/queries.py",
+          "status": "modified",
+          "additions": 41,
+          "deletions": 0,
+          "changes": 41
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 32,
+          "deletions": 1,
+          "changes": 33
+        },
+        {
+          "filename": "backend/models/architecture.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "backend/services/graph_service.py",
+          "status": "modified",
+          "additions": 38,
+          "deletions": 1,
+          "changes": 39
+        },
+        {
+          "filename": "components/landing/landing-header.tsx",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 11,
+          "changes": 47
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 1,
+          "changes": 31
+        },
+        {
+          "filename": "content/docs/api/index.md",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0,
+          "changes": 34
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 1,
+          "changes": 36
+        },
+        {
+          "filename": "next-env.d.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "package-lock.json",
+          "status": "modified",
+          "additions": 202,
+          "deletions": 0,
+          "changes": 202
+        },
+        {
+          "filename": "package.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "proxy.ts",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "changes": 21
+        }
+      ],
+      "stats": {
+        "total": 909,
+        "additions": 886,
+        "deletions": 23
+      }
+    },
+    {
+      "sha": "7919a992a4fca2ca1b6fd9d513daec4a2b7bee54",
+      "message": "UI enhancements: Update TOC active state, enhance CTA, update social links",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T06:24:50Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/7919a992a4fca2ca1b6fd9d513daec4a2b7bee54",
+      "files": [
+        {
+          "filename": "Docs/PRD.md",
+          "status": "modified",
+          "additions": 75,
+          "deletions": 677,
+          "changes": 752
+        },
+        {
+          "filename": "app/api/analyze/route.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 161,
+          "changes": 161
+        },
+        {
+          "filename": "app/api/blast-radius/route.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 69,
+          "changes": 69
+        },
+        {
+          "filename": "app/api/commentary/route.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 155,
+          "changes": 155
+        },
+        {
+          "filename": "app/api/parse-architecture/route.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 223,
+          "changes": 223
+        },
+        {
+          "filename": "app/contact/page.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 6,
+          "changes": 9
+        },
+        {
+          "filename": "app/docs/[[...slug]]/page.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 2,
+          "changes": 5
+        },
+        {
+          "filename": "app/docs/api/page.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 32,
+          "changes": 32
+        },
+        {
+          "filename": "app/privacy/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 19,
+          "changes": 20
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "app/terms/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 19,
+          "changes": 20
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-311.pyc",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/__pycache__/neo4j.cpython-311.pyc",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/queries.py",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "changes": 11
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 102,
+          "deletions": 109,
+          "changes": 211
+        },
+        {
+          "filename": "backend/models/architecture.py",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0,
+          "changes": 24
+        },
+        {
+          "filename": "backend/requirements.txt",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "backend/services/analysis_service.py",
+          "status": "added",
+          "additions": 57,
+          "deletions": 0,
+          "changes": 57
+        },
+        {
+          "filename": "backend/services/graph_service.py",
+          "status": "renamed",
+          "additions": 46,
+          "deletions": 0,
+          "changes": 46
+        },
+        {
+          "filename": "backend/services/reliability_service.py",
+          "status": "added",
+          "additions": 40,
+          "deletions": 0,
+          "changes": 40
+        },
+        {
+          "filename": "backend/services/scenario_service.py",
+          "status": "added",
+          "additions": 57,
+          "deletions": 0,
+          "changes": 57
+        },
+        {
+          "filename": "backend/services/simulation_engine.py",
+          "status": "added",
+          "additions": 116,
+          "deletions": 0,
+          "changes": 116
+        },
+        {
+          "filename": "backend/services/validation_service.py",
+          "status": "added",
+          "additions": 110,
+          "deletions": 0,
+          "changes": 110
+        },
+        {
+          "filename": "backend/tests/test_engine.py",
+          "status": "added",
+          "additions": 51,
+          "deletions": 0,
+          "changes": 51
+        },
+        {
+          "filename": "components/api-docs/api-content.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 62,
+          "changes": 62
+        },
+        {
+          "filename": "components/api-docs/api-playground.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 127,
+          "changes": 127
+        },
+        {
+          "filename": "components/api-docs/api-sidebar.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 71,
+          "changes": 71
+        },
+        {
+          "filename": "components/docs/docs-content.tsx",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 14,
+          "changes": 42
+        },
+        {
+          "filename": "components/docs/docs-header.tsx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 6,
+          "changes": 11
+        },
+        {
+          "filename": "components/docs/docs-sidebar.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/docs/docs-toc.tsx",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 17,
+          "changes": 34
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 6,
+          "changes": 9
+        },
+        {
+          "filename": "components/landing/hero-section.tsx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 7,
+          "changes": 17
+        },
+        {
+          "filename": "components/legal/legal-layout.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "components/legal/section-header.tsx",
+          "status": "added",
+          "additions": 23,
+          "deletions": 0,
+          "changes": 23
+        },
+        {
+          "filename": "components/workspace/post-mortem-modal.tsx",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 1,
+          "changes": 20
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "modified",
+          "additions": 148,
+          "deletions": 197,
+          "changes": 345
+        },
+        {
+          "filename": "next.config.mjs",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "changes": 8
+        }
+      ],
+      "stats": {
+        "total": 2945,
+        "additions": 964,
+        "deletions": 1981
+      }
+    },
+    {
+      "sha": "463ac30227ad4febf38301595b9edfc6c740a972",
+      "message": "UI: Visually hide scrollbars on all sidebars",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:40:59Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/463ac30227ad4febf38301595b9edfc6c740a972",
+      "files": [
+        {
+          "filename": "components/api-docs/api-playground.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/api-docs/api-sidebar.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/docs/docs-sidebar.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "components/docs/docs-toc.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 8,
+        "additions": 4,
+        "deletions": 4
+      }
+    },
+    {
+      "sha": "89d423c1fbb12a50ea8c0d3b7e5a180e024b8256",
+      "message": "Implement dynamic Markdown CMS and generate 13 flagship documentation pages",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:30:42Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/89d423c1fbb12a50ea8c0d3b7e5a180e024b8256",
+      "files": [
+        {
+          "filename": "app/docs/[[...slug]]/page.tsx",
+          "status": "renamed",
+          "additions": 13,
+          "deletions": 6,
+          "changes": 19
+        },
+        {
+          "filename": "components/docs/docs-content.tsx",
+          "status": "modified",
+          "additions": 89,
+          "deletions": 95,
+          "changes": 184
+        },
+        {
+          "filename": "components/docs/docs-sidebar.tsx",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 31,
+          "changes": 71
+        },
+        {
+          "filename": "content/docs/ai-analysis/bottleneck-detection.md",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "changes": 31
+        },
+        {
+          "filename": "content/docs/ai-analysis/resilience-insights.md",
+          "status": "added",
+          "additions": 35,
+          "deletions": 0,
+          "changes": 35
+        },
+        {
+          "filename": "content/docs/ai-analysis/root-cause-analysis.md",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "changes": 46
+        },
+        {
+          "filename": "content/docs/api/analysis.md",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0,
+          "changes": 90
+        },
+        {
+          "filename": "content/docs/api/architectures.md",
+          "status": "added",
+          "additions": 93,
+          "deletions": 0,
+          "changes": 93
+        },
+        {
+          "filename": "content/docs/api/simulations.md",
+          "status": "added",
+          "additions": 82,
+          "deletions": 0,
+          "changes": 82
+        },
+        {
+          "filename": "content/docs/core-concepts/dependencies.md",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "changes": 46
+        },
+        {
+          "filename": "content/docs/core-concepts/infrastructure-graphs.md",
+          "status": "added",
+          "additions": 71,
+          "deletions": 0,
+          "changes": 71
+        },
+        {
+          "filename": "content/docs/core-concepts/simulation-states.md",
+          "status": "added",
+          "additions": 51,
+          "deletions": 0,
+          "changes": 51
+        },
+        {
+          "filename": "content/docs/getting-started/architecture-upload.md",
+          "status": "added",
+          "additions": 125,
+          "deletions": 0,
+          "changes": 125
+        },
+        {
+          "filename": "content/docs/getting-started/introduction.md",
+          "status": "added",
+          "additions": 55,
+          "deletions": 0,
+          "changes": 55
+        },
+        {
+          "filename": "content/docs/getting-started/quick-start.md",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0,
+          "changes": 101
+        },
+        {
+          "filename": "content/docs/simulation-engine/failure-propagation.md",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0,
+          "changes": 64
+        },
+        {
+          "filename": "content/docs/simulation-engine/reliability-scoring.md",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0,
+          "changes": 37
+        },
+        {
+          "filename": "content/docs/simulation-engine/scenario-generation.md",
+          "status": "added",
+          "additions": 39,
+          "deletions": 0,
+          "changes": 39
+        },
+        {
+          "filename": "lib/docs.ts",
+          "status": "added",
+          "additions": 68,
+          "deletions": 0,
+          "changes": 68
+        },
+        {
+          "filename": "package-lock.json",
+          "status": "modified",
+          "additions": 1349,
+          "deletions": 37,
+          "changes": 1386
+        },
+        {
+          "filename": "package.json",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 2698,
+        "additions": 2528,
+        "deletions": 170
+      }
+    },
+    {
+      "sha": "b6318cac448dcd89c5e662c0846c1f0af43ebcaa",
+      "message": "Refactor documentation to match actual MVP capabilities",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:22:22Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/b6318cac448dcd89c5e662c0846c1f0af43ebcaa",
+      "files": [
+        {
+          "filename": "components/api-docs/api-content.tsx",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 18,
+          "changes": 26
+        },
+        {
+          "filename": "components/api-docs/api-playground.tsx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 7,
+          "changes": 11
+        },
+        {
+          "filename": "components/api-docs/api-sidebar.tsx",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 26,
+          "changes": 34
+        },
+        {
+          "filename": "components/docs/docs-content.tsx",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 16,
+          "changes": 31
+        },
+        {
+          "filename": "components/docs/docs-sidebar.tsx",
+          "status": "modified",
+          "additions": 12,
+          "deletions": 13,
+          "changes": 25
+        }
+      ],
+      "stats": {
+        "total": 127,
+        "additions": 47,
+        "deletions": 80
+      }
+    },
+    {
+      "sha": "bc4029d224ab1c0decf647dc52a088cfee762f1b",
+      "message": "Fix footer layout: move social to bottom, remove unused links",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:16:50Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/bc4029d224ab1c0decf647dc52a088cfee762f1b",
+      "files": [
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 22,
+          "changes": 37
+        }
+      ],
+      "stats": {
+        "total": 37,
+        "additions": 15,
+        "deletions": 22
+      }
+    },
+    {
+      "sha": "eece456a4fd7f5001be0a902150bf89daf21432f",
+      "message": "Fix syntax error in legal-layout template literals",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:15:21Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/eece456a4fd7f5001be0a902150bf89daf21432f",
+      "files": [
+        {
+          "filename": "components/legal/legal-layout.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        }
+      ],
+      "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+      }
+    },
+    {
+      "sha": "921d322334be5ad5c5c856d132be02b510c7b300",
+      "message": "Fix syntax error with template literal escaping",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:14:43Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/921d322334be5ad5c5c856d132be02b510c7b300",
+      "files": [
+        {
+          "filename": "app/privacy/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "app/terms/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "3989d9f40e7fef1363b4efcb310e6eaece845588",
+      "message": "Legal Framework, Terms of Service, Cookie Consent, Footer Restructure",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:12:58Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/3989d9f40e7fef1363b4efcb310e6eaece845588",
+      "files": [
+        {
+          "filename": "app/layout.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "changes": 3
+        },
+        {
+          "filename": "app/privacy/page.tsx",
+          "status": "modified",
+          "additions": 69,
+          "deletions": 129,
+          "changes": 198
+        },
+        {
+          "filename": "app/terms/page.tsx",
+          "status": "added",
+          "additions": 95,
+          "deletions": 0,
+          "changes": 95
+        },
+        {
+          "filename": "components/landing/cookie-consent.tsx",
+          "status": "added",
+          "additions": 54,
+          "deletions": 0,
+          "changes": 54
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 38,
+          "deletions": 21,
+          "changes": 59
+        },
+        {
+          "filename": "components/legal/legal-layout.tsx",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0,
+          "changes": 149
+        }
+      ],
+      "stats": {
+        "total": 558,
+        "additions": 408,
+        "deletions": 150
+      }
+    },
+    {
+      "sha": "cb327d67eff887527f0a2f8da7c50292f6d87890",
+      "message": "Add Privacy Policy page and footer links",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:09:43Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/cb327d67eff887527f0a2f8da7c50292f6d87890",
+      "files": [
+        {
+          "filename": "app/privacy/page.tsx",
+          "status": "added",
+          "additions": 168,
+          "deletions": 0,
+          "changes": 168
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 170,
+        "additions": 169,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "0c53c412051a80b228f0a1560e6470d06aec17b7",
+      "message": "Remove unused links from Contact page",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:07:26Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/0c53c412051a80b228f0a1560e6470d06aec17b7",
+      "files": [
+        {
+          "filename": "app/contact/page.tsx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 0,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "d16e79231e79a2f6a5a583ea49431c1ced5a3f04",
+      "message": "Platform Expansion: Premium About and Contact pages, Navigation Overhaul",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T05:06:01Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/d16e79231e79a2f6a5a583ea49431c1ced5a3f04",
+      "files": [
+        {
+          "filename": "app/about/page.tsx",
+          "status": "added",
+          "additions": 164,
+          "deletions": 0,
+          "changes": 164
+        },
+        {
+          "filename": "app/contact/page.tsx",
+          "status": "added",
+          "additions": 162,
+          "deletions": 0,
+          "changes": 162
+        },
+        {
+          "filename": "app/docs/api/page.tsx",
+          "status": "added",
+          "additions": 32,
+          "deletions": 0,
+          "changes": 32
+        },
+        {
+          "filename": "components/api-docs/api-content.tsx",
+          "status": "added",
+          "additions": 72,
+          "deletions": 0,
+          "changes": 72
+        },
+        {
+          "filename": "components/api-docs/api-playground.tsx",
+          "status": "added",
+          "additions": 130,
+          "deletions": 0,
+          "changes": 130
+        },
+        {
+          "filename": "components/api-docs/api-sidebar.tsx",
+          "status": "added",
+          "additions": 89,
+          "deletions": 0,
+          "changes": 89
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 8,
+          "changes": 22
+        },
+        {
+          "filename": "components/landing/landing-header.tsx",
+          "status": "modified",
+          "additions": 22,
+          "deletions": 12,
+          "changes": 34
+        }
+      ],
+      "stats": {
+        "total": 705,
+        "additions": 685,
+        "deletions": 20
+      }
+    },
+    {
+      "sha": "30013778e14e05973593b665fa07be553e2e6cb2",
+      "message": "UI Overhaul: Features, Pricing, Changelog, and Docs",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T04:58:37Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/30013778e14e05973593b665fa07be553e2e6cb2",
+      "files": [
+        {
+          "filename": "app/changelog/page.tsx",
+          "status": "added",
+          "additions": 144,
+          "deletions": 0,
+          "changes": 144
+        },
+        {
+          "filename": "app/docs/page.tsx",
+          "status": "added",
+          "additions": 36,
+          "deletions": 0,
+          "changes": 36
+        },
+        {
+          "filename": "app/features/page.tsx",
+          "status": "added",
+          "additions": 222,
+          "deletions": 0,
+          "changes": 222
+        },
+        {
+          "filename": "app/page.tsx",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 28,
+          "changes": 35
+        },
+        {
+          "filename": "app/pricing/page.tsx",
+          "status": "added",
+          "additions": 148,
+          "deletions": 0,
+          "changes": 148
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-311.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/__pycache__/neo4j.cpython-311.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/requirements.txt",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0,
+          "changes": 5
+        },
+        {
+          "filename": "components/docs/docs-content.tsx",
+          "status": "added",
+          "additions": 115,
+          "deletions": 0,
+          "changes": 115
+        },
+        {
+          "filename": "components/docs/docs-header.tsx",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "changes": 50
+        },
+        {
+          "filename": "components/docs/docs-sidebar.tsx",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0,
+          "changes": 79
+        },
+        {
+          "filename": "components/docs/docs-toc.tsx",
+          "status": "added",
+          "additions": 54,
+          "deletions": 0,
+          "changes": 54
+        },
+        {
+          "filename": "components/landing/ai-analysis-section.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 161,
+          "changes": 161
+        },
+        {
+          "filename": "components/landing/cta-section.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 17,
+          "changes": 18
+        },
+        {
+          "filename": "components/landing/feature-showcase.tsx",
+          "status": "added",
+          "additions": 192,
+          "deletions": 0,
+          "changes": 192
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "components/landing/hero-section.tsx",
+          "status": "modified",
+          "additions": 193,
+          "deletions": 70,
+          "changes": 263
+        },
+        {
+          "filename": "components/landing/landing-header.tsx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 2,
+          "changes": 7
+        },
+        {
+          "filename": "components/landing/problem-section.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 94,
+          "changes": 94
+        },
+        {
+          "filename": "components/landing/simulation-preview.tsx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 257,
+          "changes": 257
+        },
+        {
+          "filename": "next-env.d.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 1886,
+        "additions": 1254,
+        "deletions": 632
+      }
+    },
+    {
+      "sha": "c9366afc67a8ddb64d03c506f7de8de8d58af87f",
+      "message": "chore: make repo github ready with license and docs links",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T04:17:26Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/c9366afc67a8ddb64d03c506f7de8de8d58af87f",
+      "files": [
+        {
+          "filename": "LICENSE",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "changes": 21
+        },
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 2,
+          "changes": 5
+        }
+      ],
+      "stats": {
+        "total": 26,
+        "additions": 24,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "397f9e8fa938b4607f61a86b2a99da1b18e1df6c",
+      "message": "Initial commit",
+      "author": "Aditya Rane",
+      "date": "2026-06-15T04:13:41Z",
+      "url": "https://github.com/Adityarane012/Blackout/commit/397f9e8fa938b4607f61a86b2a99da1b18e1df6c",
+      "files": [
+        {
+          "filename": ".agents/rules/graphify.md",
+          "status": "added",
+          "additions": 14,
+          "deletions": 0,
+          "changes": 14
+        },
+        {
+          "filename": ".agents/workflows/graphify.md",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "changes": 10
+        },
+        {
+          "filename": ".gitignore",
+          "status": "added",
+          "additions": 70,
+          "deletions": 0,
+          "changes": 70
+        },
+        {
+          "filename": "Docs/Appflow.md",
+          "status": "added",
+          "additions": 679,
+          "deletions": 0,
+          "changes": 679
+        },
+        {
+          "filename": "Docs/Backend Schema.md",
+          "status": "added",
+          "additions": 592,
+          "deletions": 0,
+          "changes": 592
+        },
+        {
+          "filename": "Docs/Implementation plan.md",
+          "status": "added",
+          "additions": 721,
+          "deletions": 0,
+          "changes": 721
+        },
+        {
+          "filename": "Docs/PRD.md",
+          "status": "added",
+          "additions": 755,
+          "deletions": 0,
+          "changes": 755
+        },
+        {
+          "filename": "Docs/Technical Requirements Document (TRD).md",
+          "status": "added",
+          "additions": 766,
+          "deletions": 0,
+          "changes": 766
+        },
+        {
+          "filename": "Docs/UI UX Design.md",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "Docs/presentation.md",
+          "status": "added",
+          "additions": 603,
+          "deletions": 0,
+          "changes": 603
+        },
+        {
+          "filename": "README.md",
+          "status": "added",
+          "additions": 135,
+          "deletions": 0,
+          "changes": 135
+        },
+        {
+          "filename": "app/api/analyze/route.ts",
+          "status": "added",
+          "additions": 161,
+          "deletions": 0,
+          "changes": 161
+        },
+        {
+          "filename": "app/api/blast-radius/route.ts",
+          "status": "added",
+          "additions": 69,
+          "deletions": 0,
+          "changes": 69
+        },
+        {
+          "filename": "app/api/commentary/route.ts",
+          "status": "added",
+          "additions": 155,
+          "deletions": 0,
+          "changes": 155
+        },
+        {
+          "filename": "app/api/parse-architecture/route.ts",
+          "status": "added",
+          "additions": 223,
+          "deletions": 0,
+          "changes": 223
+        },
+        {
+          "filename": "app/globals.css",
+          "status": "added",
+          "additions": 259,
+          "deletions": 0,
+          "changes": 259
+        },
+        {
+          "filename": "app/layout.tsx",
+          "status": "added",
+          "additions": 45,
+          "deletions": 0,
+          "changes": 45
+        },
+        {
+          "filename": "app/page.tsx",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "changes": 56
+        },
+        {
+          "filename": "app/simulator/page.tsx",
+          "status": "added",
+          "additions": 137,
+          "deletions": 0,
+          "changes": 137
+        },
+        {
+          "filename": "backend/__pycache__/dependencies.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/__pycache__/graph_service.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/__pycache__/main.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/__pycache__/neo4j.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/__pycache__/queries.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/__pycache__/utils.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/db/neo4j.py",
+          "status": "added",
+          "additions": 74,
+          "deletions": 0,
+          "changes": 74
+        },
+        {
+          "filename": "backend/db/queries.py",
+          "status": "added",
+          "additions": 83,
+          "deletions": 0,
+          "changes": 83
+        },
+        {
+          "filename": "backend/db/utils.py",
+          "status": "added",
+          "additions": 121,
+          "deletions": 0,
+          "changes": 121
+        },
+        {
+          "filename": "backend/dependencies.py",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "changes": 29
+        },
+        {
+          "filename": "backend/graph_service.py",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0,
+          "changes": 81
+        },
+        {
+          "filename": "backend/main.py",
+          "status": "added",
+          "additions": 135,
+          "deletions": 0,
+          "changes": 135
+        },
+        {
+          "filename": "backend/models/__pycache__/graph.cpython-313.pyc",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "backend/models/graph.py",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0,
+          "changes": 64
+        },
+        {
+          "filename": "components.json",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "changes": 21
+        },
+        {
+          "filename": "components/event-log.tsx",
+          "status": "added",
+          "additions": 105,
+          "deletions": 0,
+          "changes": 105
+        },
+        {
+          "filename": "components/header.tsx",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "changes": 56
+        },
+        {
+          "filename": "components/landing/ai-analysis-section.tsx",
+          "status": "added",
+          "additions": 161,
+          "deletions": 0,
+          "changes": 161
+        },
+        {
+          "filename": "components/landing/animated-graph-background.tsx",
+          "status": "added",
+          "additions": 243,
+          "deletions": 0,
+          "changes": 243
+        },
+        {
+          "filename": "components/landing/cta-section.tsx",
+          "status": "added",
+          "additions": 104,
+          "deletions": 0,
+          "changes": 104
+        },
+        {
+          "filename": "components/landing/footer.tsx",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0,
+          "changes": 88
+        },
+        {
+          "filename": "components/landing/hero-section.tsx",
+          "status": "added",
+          "additions": 117,
+          "deletions": 0,
+          "changes": 117
+        },
+        {
+          "filename": "components/landing/landing-header.tsx",
+          "status": "added",
+          "additions": 68,
+          "deletions": 0,
+          "changes": 68
+        },
+        {
+          "filename": "components/landing/problem-section.tsx",
+          "status": "added",
+          "additions": 94,
+          "deletions": 0,
+          "changes": 94
+        },
+        {
+          "filename": "components/landing/simulation-preview.tsx",
+          "status": "added",
+          "additions": 257,
+          "deletions": 0,
+          "changes": 257
+        },
+        {
+          "filename": "components/network-graph.tsx",
+          "status": "added",
+          "additions": 287,
+          "deletions": 0,
+          "changes": 287
+        },
+        {
+          "filename": "components/node-detail-panel.tsx",
+          "status": "added",
+          "additions": 165,
+          "deletions": 0,
+          "changes": 165
+        },
+        {
+          "filename": "components/simulation-controls.tsx",
+          "status": "added",
+          "additions": 114,
+          "deletions": 0,
+          "changes": 114
+        },
+        {
+          "filename": "components/system-stats.tsx",
+          "status": "added",
+          "additions": 120,
+          "deletions": 0,
+          "changes": 120
+        },
+        {
+          "filename": "components/theme-provider.tsx",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "changes": 11
+        },
+        {
+          "filename": "components/ui/accordion.tsx",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "changes": 66
+        },
+        {
+          "filename": "components/ui/alert-dialog.tsx",
+          "status": "added",
+          "additions": 157,
+          "deletions": 0,
+          "changes": 157
+        },
+        {
+          "filename": "components/ui/alert.tsx",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "changes": 66
+        },
+        {
+          "filename": "components/ui/aspect-ratio.tsx",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "changes": 11
+        },
+        {
+          "filename": "components/ui/avatar.tsx",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0,
+          "changes": 53
+        },
+        {
+          "filename": "components/ui/badge.tsx",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0,
+          "changes": 46
+        },
+        {
+          "filename": "components/ui/breadcrumb.tsx",
+          "status": "added",
+          "additions": 109,
+          "deletions": 0,
+          "changes": 109
+        },
+        {
+          "filename": "components/ui/button-group.tsx",
+          "status": "added",
+          "additions": 83,
+          "deletions": 0,
+          "changes": 83
+        },
+        {
+          "filename": "components/ui/button.tsx",
+          "status": "added",
+          "additions": 60,
+          "deletions": 0,
+          "changes": 60
+        },
+        {
+          "filename": "components/ui/calendar.tsx",
+          "status": "added",
+          "additions": 213,
+          "deletions": 0,
+          "changes": 213
+        },
+        {
+          "filename": "components/ui/card.tsx",
+          "status": "added",
+          "additions": 92,
+          "deletions": 0,
+          "changes": 92
+        },
+        {
+          "filename": "components/ui/carousel.tsx",
+          "status": "added",
+          "additions": 241,
+          "deletions": 0,
+          "changes": 241
+        },
+        {
+          "filename": "components/ui/chart.tsx",
+          "status": "added",
+          "additions": 351,
+          "deletions": 0,
+          "changes": 351
+        },
+        {
+          "filename": "components/ui/checkbox.tsx",
+          "status": "added",
+          "additions": 32,
+          "deletions": 0,
+          "changes": 32
+        },
+        {
+          "filename": "components/ui/collapsible.tsx",
+          "status": "added",
+          "additions": 33,
+          "deletions": 0,
+          "changes": 33
+        },
+        {
+          "filename": "components/ui/command.tsx",
+          "status": "added",
+          "additions": 184,
+          "deletions": 0,
+          "changes": 184
+        },
+        {
+          "filename": "components/ui/context-menu.tsx",
+          "status": "added",
+          "additions": 252,
+          "deletions": 0,
+          "changes": 252
+        },
+        {
+          "filename": "components/ui/dialog.tsx",
+          "status": "added",
+          "additions": 143,
+          "deletions": 0,
+          "changes": 143
+        },
+        {
+          "filename": "components/ui/drawer.tsx",
+          "status": "added",
+          "additions": 135,
+          "deletions": 0,
+          "changes": 135
+        },
+        {
+          "filename": "components/ui/dropdown-menu.tsx",
+          "status": "added",
+          "additions": 257,
+          "deletions": 0,
+          "changes": 257
+        },
+        {
+          "filename": "components/ui/empty.tsx",
+          "status": "added",
+          "additions": 104,
+          "deletions": 0,
+          "changes": 104
+        },
+        {
+          "filename": "components/ui/field.tsx",
+          "status": "added",
+          "additions": 244,
+          "deletions": 0,
+          "changes": 244
+        },
+        {
+          "filename": "components/ui/form.tsx",
+          "status": "added",
+          "additions": 167,
+          "deletions": 0,
+          "changes": 167
+        },
+        {
+          "filename": "components/ui/hover-card.tsx",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0,
+          "changes": 44
+        },
+        {
+          "filename": "components/ui/input-group.tsx",
+          "status": "added",
+          "additions": 169,
+          "deletions": 0,
+          "changes": 169
+        },
+        {
+          "filename": "components/ui/input-otp.tsx",
+          "status": "added",
+          "additions": 77,
+          "deletions": 0,
+          "changes": 77
+        },
+        {
+          "filename": "components/ui/input.tsx",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "changes": 21
+        },
+        {
+          "filename": "components/ui/item.tsx",
+          "status": "added",
+          "additions": 193,
+          "deletions": 0,
+          "changes": 193
+        },
+        {
+          "filename": "components/ui/kbd.tsx",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "changes": 28
+        },
+        {
+          "filename": "components/ui/label.tsx",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0,
+          "changes": 24
+        },
+        {
+          "filename": "components/ui/menubar.tsx",
+          "status": "added",
+          "additions": 276,
+          "deletions": 0,
+          "changes": 276
+        },
+        {
+          "filename": "components/ui/navigation-menu.tsx",
+          "status": "added",
+          "additions": 166,
+          "deletions": 0,
+          "changes": 166
+        },
+        {
+          "filename": "components/ui/pagination.tsx",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "changes": 127
+        },
+        {
+          "filename": "components/ui/popover.tsx",
+          "status": "added",
+          "additions": 48,
+          "deletions": 0,
+          "changes": 48
+        },
+        {
+          "filename": "components/ui/progress.tsx",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "changes": 31
+        },
+        {
+          "filename": "components/ui/radio-group.tsx",
+          "status": "added",
+          "additions": 45,
+          "deletions": 0,
+          "changes": 45
+        },
+        {
+          "filename": "components/ui/resizable.tsx",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "changes": 56
+        },
+        {
+          "filename": "components/ui/scroll-area.tsx",
+          "status": "added",
+          "additions": 58,
+          "deletions": 0,
+          "changes": 58
+        },
+        {
+          "filename": "components/ui/select.tsx",
+          "status": "added",
+          "additions": 185,
+          "deletions": 0,
+          "changes": 185
+        },
+        {
+          "filename": "components/ui/separator.tsx",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "changes": 28
+        },
+        {
+          "filename": "components/ui/sheet.tsx",
+          "status": "added",
+          "additions": 139,
+          "deletions": 0,
+          "changes": 139
+        },
+        {
+          "filename": "components/ui/sidebar.tsx",
+          "status": "added",
+          "additions": 726,
+          "deletions": 0,
+          "changes": 726
+        },
+        {
+          "filename": "components/ui/skeleton.tsx",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "changes": 13
+        },
+        {
+          "filename": "components/ui/slider.tsx",
+          "status": "added",
+          "additions": 59,
+          "deletions": 0,
+          "changes": 59
+        },
+        {
+          "filename": "components/ui/sonner.tsx",
+          "status": "added",
+          "additions": 25,
+          "deletions": 0,
+          "changes": 25
+        },
+        {
+          "filename": "components/ui/spinner.tsx",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "changes": 16
+        },
+        {
+          "filename": "components/ui/switch.tsx",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "changes": 29
+        },
+        {
+          "filename": "components/ui/table.tsx",
+          "status": "added",
+          "additions": 116,
+          "deletions": 0,
+          "changes": 116
+        },
+        {
+          "filename": "components/ui/tabs.tsx",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "changes": 66
+        },
+        {
+          "filename": "components/ui/textarea.tsx",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "changes": 18
+        },
+        {
+          "filename": "components/ui/toast.tsx",
+          "status": "added",
+          "additions": 129,
+          "deletions": 0,
+          "changes": 129
+        },
+        {
+          "filename": "components/ui/toaster.tsx",
+          "status": "added",
+          "additions": 35,
+          "deletions": 0,
+          "changes": 35
+        },
+        {
+          "filename": "components/ui/toggle-group.tsx",
+          "status": "added",
+          "additions": 73,
+          "deletions": 0,
+          "changes": 73
+        },
+        {
+          "filename": "components/ui/toggle.tsx",
+          "status": "added",
+          "additions": 47,
+          "deletions": 0,
+          "changes": 47
+        },
+        {
+          "filename": "components/ui/tooltip.tsx",
+          "status": "added",
+          "additions": 61,
+          "deletions": 0,
+          "changes": 61
+        },
+        {
+          "filename": "components/ui/use-mobile.tsx",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0,
+          "changes": 19
+        },
+        {
+          "filename": "components/ui/use-toast.ts",
+          "status": "added",
+          "additions": 191,
+          "deletions": 0,
+          "changes": 191
+        },
+        {
+          "filename": "components/workspace/import-architecture-modal.tsx",
+          "status": "added",
+          "additions": 432,
+          "deletions": 0,
+          "changes": 432
+        },
+        {
+          "filename": "components/workspace/left-sidebar.tsx",
+          "status": "added",
+          "additions": 257,
+          "deletions": 0,
+          "changes": 257
+        },
+        {
+          "filename": "components/workspace/playback-timeline.tsx",
+          "status": "added",
+          "additions": 144,
+          "deletions": 0,
+          "changes": 144
+        },
+        {
+          "filename": "components/workspace/post-mortem-modal.tsx",
+          "status": "added",
+          "additions": 119,
+          "deletions": 0,
+          "changes": 119
+        },
+        {
+          "filename": "components/workspace/workspace-header.tsx",
+          "status": "added",
+          "additions": 224,
+          "deletions": 0,
+          "changes": 224
+        },
+        {
+          "filename": "docker-compose.yml",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "changes": 31
+        },
+        {
+          "filename": "graphify-out/.graphify_ast.json",
+          "status": "added",
+          "additions": 16262,
+          "deletions": 0,
+          "changes": 16262
+        },
+        {
+          "filename": "graphify-out/.graphify_detect.json",
+          "status": "added",
+          "additions": 119,
+          "deletions": 0,
+          "changes": 119
+        },
+        {
+          "filename": "graphify-out/.graphify_labels.json",
+          "status": "added",
+          "additions": 131,
+          "deletions": 0,
+          "changes": 131
+        },
+        {
+          "filename": "graphify-out/.graphify_python",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/.graphify_root",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/.graphify_uncached.txt",
+          "status": "added",
+          "additions": 100,
+          "deletions": 0,
+          "changes": 100
+        },
+        {
+          "filename": "graphify-out/GRAPH_REPORT.md",
+          "status": "added",
+          "additions": 470,
+          "deletions": 0,
+          "changes": 470
+        },
+        {
+          "filename": "graphify-out/apply_labels.py",
+          "status": "added",
+          "additions": 66,
+          "deletions": 0,
+          "changes": 66
+        },
+        {
+          "filename": "graphify-out/graph.html",
+          "status": "added",
+          "additions": 305,
+          "deletions": 0,
+          "changes": 305
+        },
+        {
+          "filename": "graphify-out/graph.json",
+          "status": "added",
+          "additions": 26413,
+          "deletions": 0,
+          "changes": 26413
+        },
+        {
+          "filename": "graphify-out/manifest.json",
+          "status": "added",
+          "additions": 617,
+          "deletions": 0,
+          "changes": 617
+        },
+        {
+          "filename": "hooks/use-mobile.ts",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0,
+          "changes": 19
+        },
+        {
+          "filename": "hooks/use-simulation.ts",
+          "status": "added",
+          "additions": 346,
+          "deletions": 0,
+          "changes": 346
+        },
+        {
+          "filename": "hooks/use-toast.ts",
+          "status": "added",
+          "additions": 191,
+          "deletions": 0,
+          "changes": 191
+        },
+        {
+          "filename": "lib/graph-definition.ts",
+          "status": "added",
+          "additions": 29,
+          "deletions": 0,
+          "changes": 29
+        },
+        {
+          "filename": "lib/propagation.ts",
+          "status": "added",
+          "additions": 192,
+          "deletions": 0,
+          "changes": 192
+        },
+        {
+          "filename": "lib/utils.ts",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6
+        },
+        {
+          "filename": "next-env.d.ts",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6
+        },
+        {
+          "filename": "next.config.mjs",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0,
+          "changes": 19
+        },
+        {
+          "filename": "package-lock.json",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "package.json",
+          "status": "added",
+          "additions": 73,
+          "deletions": 0,
+          "changes": 73
+        },
+        {
+          "filename": "pnpm-lock.yaml",
+          "status": "added",
+          "additions": 3246,
+          "deletions": 0,
+          "changes": 3246
+        },
+        {
+          "filename": "postcss.config.mjs",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "changes": 8
+        },
+        {
+          "filename": "public/apple-icon.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon-dark-32x32.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon-light-32x32.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/icon.svg",
+          "status": "added",
+          "additions": 26,
+          "deletions": 0,
+          "changes": 26
+        },
+        {
+          "filename": "public/placeholder-logo.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/placeholder-logo.svg",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "public/placeholder-user.jpg",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/placeholder.jpg",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "public/placeholder.svg",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "styles/globals.css",
+          "status": "added",
+          "additions": 125,
+          "deletions": 0,
+          "changes": 125
+        },
+        {
+          "filename": "tsconfig.json",
+          "status": "added",
+          "additions": 43,
+          "deletions": 0,
+          "changes": 43
+        }
+      ],
+      "stats": {
+        "total": 68871,
+        "additions": 68871,
+        "deletions": 0
+      }
+    }
+  ]
+}

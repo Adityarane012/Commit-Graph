@@ -1,0 +1,29 @@
+[
+  {
+    "key": "blackout",
+    "name": "Blackout",
+    "owner": "Adityarane012",
+    "description": "A power outage tracking application",
+    "url": "https://github.com/Adityarane012/Blackout",
+    "commitCount": 34,
+    "fetchedAt": "2026-08-09T10:23:50.511Z"
+  },
+  {
+    "key": "supplysetu-ai",
+    "name": "SupplySetu-AI",
+    "owner": "Adityarane012",
+    "description": "AI-powered supply chain management",
+    "url": "https://github.com/Adityarane012/SupplySetu-AI",
+    "commitCount": 39,
+    "fetchedAt": "2026-08-09T10:24:03.645Z"
+  },
+  {
+    "key": "memori",
+    "name": "Memori",
+    "owner": "Adityarane012",
+    "description": "Agent-native memory infrastructure",
+    "url": "https://github.com/Adityarane012/Memori",
+    "commitCount": 30,
+    "fetchedAt": "2026-08-09T11:38:00.000Z"
+  }
+]

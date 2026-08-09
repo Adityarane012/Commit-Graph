@@ -1,0 +1,1990 @@
+{
+  "repo": {
+    "key": "memori",
+    "name": "Memori",
+    "owner": "Adityarane012",
+    "description": "Agent-native memory infrastructure",
+    "url": "https://github.com/Adityarane012/Memori",
+    "commitCount": 30,
+    "fetchedAt": "2026-08-09T11:38:29.991Z"
+  },
+  "commits": [
+    {
+      "sha": "c05ae3a92e6eeea97a22e5f6f535819ee51428ea",
+      "message": "Hermes int (#473)\n\n* Update GitHub Actions workflow and package configuration\n\n- Upgrade actions/checkout and actions/setup-python to version 6 in the CI workflow.\n- Modify package name from `memori-hermes` to `hermes-memori` in the workflow and related commands.\n- Update installation command to include `pytest-cov` for enhanced testing coverage.\n- Change license format in pyproject.toml for consistency.",
+      "date": "2026-05-05T20:38:39Z",
+      "files": [
+        {
+          "filename": ".github/workflows/publish-hermes.yml",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 10,
+          "changes": 20
+        },
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 2,
+          "changes": 3
+        }
+      ],
+      "stats": {
+        "total": 23,
+        "additions": 11,
+        "deletions": 12
+      }
+    },
+    {
+      "sha": "65cc789857cdb50742b2ce89af9a7876cd13b6b0",
+      "message": "Hermes int (#474)\n\n* updates",
+      "date": "2026-05-05T20:54:17Z",
+      "files": [
+        {
+          "filename": ".github/workflows/publish-hermes.yml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "7d01b4d8b17ef45f2237d88cca7c078d322318fa",
+      "message": "Hermes int updates (#475)\n\n* Update Memori integration for Hermes Agent\n\n- Clarified the optional nature of `MEMORI_PROJECT_ID` in README and documentation, specifying its fallback to Hermes' active context.\n- Enhanced the README for the Memori integration, detailing the structured memory capabilities and the types of agent activity captured.\n- Updated version to 0.1.1 in `pyproject.toml` and added `memori` as a dependency in `plugin.yaml`.\n- Improved error handling for missing `memori` dependency in the client, with corresponding tests to ensure proper reporting.\n- Adjusted internal logic to utilize project context more effectively, ensuring compatibility with Hermes' project scoping.\n\n* update hermes readme",
+      "date": "2026-05-06T15:36:14Z",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/overview.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/quickstart.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "changes": 3
+        },
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 1,
+          "changes": 6
+        },
+        {
+          "filename": "integrations/hermes/plugin.yaml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/hermes/src/memori_hermes/__init__.py",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 19,
+          "changes": 55
+        },
+        {
+          "filename": "integrations/hermes/src/memori_hermes/client.py",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 3,
+          "changes": 18
+        },
+        {
+          "filename": "integrations/hermes/src/memori_hermes/plugin.yaml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/hermes/tests/test_client.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 1,
+          "changes": 19
+        },
+        {
+          "filename": "integrations/hermes/tests/test_provider.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        }
+      ],
+      "stats": {
+        "total": 119,
+        "additions": 88,
+        "deletions": 31
+      }
+    },
+    {
+      "sha": "4a94712f3ea398a5aee8b46a1fa53d0aa0cdd810",
+      "message": "Update version and description for hermes-memori integration (#476)\n\n- Bump version from 0.1.1 to 0.1.2 in `pyproject.toml`.\n- Refine project description to better reflect the capabilities of the Memori integration for Hermes Agent in the README.",
+      "date": "2026-05-06T16:18:54Z",
+      "files": [
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 6,
+        "additions": 2,
+        "deletions": 4
+      }
+    },
+    {
+      "sha": "b2121ba104cbc471d99b1d4b99b845159e69a968",
+      "message": "fix: accept string IDs at the Rust/TS boundary for BYODB BigInt compatibility (#477)",
+      "date": "2026-05-06T17:39:09Z",
+      "files": [
+        {
+          "filename": "core/bindings/node/src/engine.rs",
+          "status": "modified",
+          "additions": 45,
+          "deletions": 5,
+          "changes": 50
+        },
+        {
+          "filename": "core/bindings/node/src/types.rs",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 5,
+          "changes": 8
+        },
+        {
+          "filename": "memori-ts/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "memori-ts/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/src/core/engine.ts",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "memori-ts/src/native/index.d.ts",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        },
+        {
+          "filename": "memori-ts/src/types/api.ts",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 6,
+          "changes": 12
+        },
+        {
+          "filename": "memori-ts/src/utils/utils.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 88,
+        "additions": 63,
+        "deletions": 25
+      }
+    },
+    {
+      "sha": "5f22662d864c3518b1b0262d23553345ac963173",
+      "message": "docs: update README with agent-native memory framing and fixes (#479)\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-06T19:44:02Z",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 9,
+          "changes": 20
+        }
+      ],
+      "stats": {
+        "total": 20,
+        "additions": 11,
+        "deletions": 9
+      }
+    },
+    {
+      "sha": "4e2d3a25cbdcc073623e3f088d86b09a75d7a99f",
+      "message": "Enhance documentation for Memori integration with Hermes Agent (#480)\n\n- Updated terminology to \"Agent-Controlled Intelligent Recall\" for clarity.\n- Expanded the Quickstart guide to include prerequisites, installation, configuration, and verification steps.\n- Added detailed instructions for testing the memory loop and explained memory scoping.\n- Improved the README to better describe the capabilities and benefits of the Memori memory provider.",
+      "date": "2026-05-07T01:07:33Z",
+      "files": [
+        {
+          "filename": "docs/memori-cloud/hermes/overview.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/quickstart.mdx",
+          "status": "modified",
+          "additions": 119,
+          "deletions": 13,
+          "changes": 132
+        },
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 223,
+          "deletions": 23,
+          "changes": 246
+        }
+      ],
+      "stats": {
+        "total": 380,
+        "additions": 343,
+        "deletions": 37
+      }
+    },
+    {
+      "sha": "c616d5d0f2990854a60cd2f9da04895fd5355298",
+      "message": "docs: update OpenClaw docs with Agent-Controlled Intelligent Recall (#481)\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-07T14:35:04Z",
+      "files": [
+        {
+          "filename": "docs/memori-cloud/openclaw/overview.mdx",
+          "status": "modified",
+          "additions": 23,
+          "deletions": 7,
+          "changes": 30
+        },
+        {
+          "filename": "docs/memori-cloud/openclaw/quickstart.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/openclaw/README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 34,
+        "additions": 25,
+        "deletions": 9
+      }
+    },
+    {
+      "sha": "d0105248a2172777ee5551f12f36148b33f2be9f",
+      "message": "Hermes fix (#482)\n\n* Update Memori integration documentation and version for Hermes Agent\n\n- Enhanced the overview and quickstart documentation to clarify the capabilities of Memori, emphasizing structured memory from agent trace and execution context.\n- Updated the README to reflect improvements in memory capture and recall processes, including detailed descriptions of memory scoping and agent-controlled recall.\n- Bumped version from 0.1.2 to 0.1.3 in `pyproject.toml` to align with the latest changes.\n\n* Refine Quickstart guide for Memori integration with Hermes Agent\n\n- Enhanced examples to better illustrate the capabilities of the Memori memory provider.",
+      "date": "2026-05-07T14:40:18Z",
+      "files": [
+        {
+          "filename": "docs/memori-cloud/hermes/overview.mdx",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 7,
+          "changes": 27
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/quickstart.mdx",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 20,
+          "changes": 38
+        },
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 80,
+          "deletions": 27,
+          "changes": 107
+        },
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "tests/test_agent.py",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 0,
+          "changes": 16
+        }
+      ],
+      "stats": {
+        "total": 190,
+        "additions": 135,
+        "deletions": 55
+      }
+    },
+    {
+      "sha": "6239cbb1083fed6932fa1b7f01788aa2d39e5293",
+      "message": "TS BYODB: Connection Factory Pattern + Storage Layer Fixes (#483)\n\n* started on docs\n\n* Updated clawhub skill\n\n* Update SKILL.md\n\n* Connection factory, tests, and docs updatess\n\n* update sqlite docs due to connection close no-op\n\n* Update README.md\n\n* Update README.md",
+      "date": "2026-05-07T15:51:56Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb-typescript.mdx",
+          "status": "added",
+          "additions": 117,
+          "deletions": 0,
+          "changes": 117
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql-typescript.mdx",
+          "status": "added",
+          "additions": 112,
+          "deletions": 0,
+          "changes": 112
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres-typescript.mdx",
+          "status": "added",
+          "additions": 113,
+          "deletions": 0,
+          "changes": 113
+        },
+        {
+          "filename": "docs/memori-byodb/databases/sqlite-typescript.mdx",
+          "status": "added",
+          "additions": 96,
+          "deletions": 0,
+          "changes": 96
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typeorm.mdx",
+          "status": "added",
+          "additions": 155,
+          "deletions": 0,
+          "changes": 155
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-installation.mdx",
+          "status": "added",
+          "additions": 271,
+          "deletions": 0,
+          "changes": 271
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "added",
+          "additions": 196,
+          "deletions": 0,
+          "changes": 196
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-anthropic.mdx",
+          "status": "added",
+          "additions": 107,
+          "deletions": 0,
+          "changes": 107
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-gemini.mdx",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "changes": 127
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-openai.mdx",
+          "status": "added",
+          "additions": 137,
+          "deletions": 0,
+          "changes": 137
+        },
+        {
+          "filename": "integrations/openclaw/skills/clawhub/SKILL.md",
+          "status": "modified",
+          "additions": 135,
+          "deletions": 231,
+          "changes": 366
+        },
+        {
+          "filename": "memori-ts/README.md",
+          "status": "modified",
+          "additions": 108,
+          "deletions": 57,
+          "changes": 165
+        },
+        {
+          "filename": "memori-ts/examples/cockroachdb/main.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/examples/mysql/main.ts",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        },
+        {
+          "filename": "memori-ts/examples/orm/README.md",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 12,
+          "changes": 16
+        },
+        {
+          "filename": "memori-ts/examples/orm/drizzle-pg.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 60,
+          "changes": 60
+        },
+        {
+          "filename": "memori-ts/examples/orm/mikro-sqlite.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 76,
+          "changes": 76
+        },
+        {
+          "filename": "memori-ts/examples/orm/sequelize-mysql.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 61,
+          "changes": 61
+        },
+        {
+          "filename": "memori-ts/examples/orm/typeorm-sqlite.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/examples/postgres/main.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/examples/sqlite/main.ts",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "changes": 3
+        },
+        {
+          "filename": "memori-ts/examples/sqlite/rust_core_main.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 403,
+          "changes": 405
+        },
+        {
+          "filename": "memori-ts/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 24,
+          "changes": 25
+        },
+        {
+          "filename": "memori-ts/src/memori.ts",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "changes": 3
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/drizzle.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 137,
+          "changes": 137
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/mikro.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 89,
+          "changes": 89
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/mysql.ts",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/postgresql.ts",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 9,
+          "changes": 49
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/sequelize.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 91,
+          "changes": 91
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/sqlite.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/src/storage/base.ts",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/src/storage/manager.ts",
+          "status": "modified",
+          "additions": 124,
+          "deletions": 109,
+          "changes": 233
+        },
+        {
+          "filename": "memori-ts/src/storage/registry.ts",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 8,
+          "changes": 17
+        },
+        {
+          "filename": "memori-ts/tests/core/engine.test.ts",
+          "status": "added",
+          "additions": 272,
+          "deletions": 0,
+          "changes": 272
+        },
+        {
+          "filename": "memori-ts/tests/engines/recall.test.ts",
+          "status": "modified",
+          "additions": 105,
+          "deletions": 0,
+          "changes": 105
+        },
+        {
+          "filename": "memori-ts/tests/memori.test.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/tests/storage/adapters.test.ts",
+          "status": "added",
+          "additions": 390,
+          "deletions": 0,
+          "changes": 390
+        },
+        {
+          "filename": "memori-ts/tests/storage/builder.test.ts",
+          "status": "added",
+          "additions": 128,
+          "deletions": 0,
+          "changes": 128
+        },
+        {
+          "filename": "memori-ts/tests/storage/drivers.test.ts",
+          "status": "added",
+          "additions": 1090,
+          "deletions": 0,
+          "changes": 1090
+        },
+        {
+          "filename": "memori-ts/tests/storage/manager.test.ts",
+          "status": "added",
+          "additions": 333,
+          "deletions": 0,
+          "changes": 333
+        },
+        {
+          "filename": "memori-ts/tests/storage/registry.test.ts",
+          "status": "added",
+          "additions": 65,
+          "deletions": 0,
+          "changes": 65
+        },
+        {
+          "filename": "memori-ts/vitest.config.ts",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 5639,
+        "additions": 4257,
+        "deletions": 1382
+      }
+    },
+    {
+      "sha": "4d12bba67dad7ead3582107afa4049b77b60d6e1",
+      "message": "Enhance README for Hermes integration with detailed multi-step task instructions and feedback mechanisms. Updated memory loop testing steps to clarify agent capabilities and structured memory retention across sessions. (#485)",
+      "date": "2026-05-07T16:51:05Z",
+      "files": [
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 22,
+          "deletions": 8,
+          "changes": 30
+        }
+      ],
+      "stats": {
+        "total": 30,
+        "additions": 22,
+        "deletions": 8
+      }
+    },
+    {
+      "sha": "65348124bb66264712c7558d99485efde6b88761",
+      "message": "TS OC: remove query param from memori_recall tool (#486)\n\n* Bump openclaw to v0.0.12; loosen recall tool\n\nUpdate package.json version to 0.0.12 and relax the Memori recall tool schema: remove the required 'query' parameter and its description from the tool's JSON schema and remove the query parameter from the TypeScript execute signature. This makes the search query optional so calls can omit it instead of forcing the LLM to always provide one.\n\n* Update memori-recall.test.ts\n\n* Update memori-recall.test.ts",
+      "date": "2026-05-07T17:00:40Z",
+      "files": [
+        {
+          "filename": "integrations/openclaw/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "integrations/openclaw/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/openclaw/skills/clawhub/SKILL.md",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 10,
+          "changes": 23
+        },
+        {
+          "filename": "integrations/openclaw/src/tools/memori-recall.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 8,
+          "changes": 8
+        },
+        {
+          "filename": "integrations/openclaw/tests/tools/memori-recall.test.ts",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 16,
+          "changes": 63
+        }
+      ],
+      "stats": {
+        "total": 100,
+        "additions": 63,
+        "deletions": 37
+      }
+    },
+    {
+      "sha": "55272b9acfa07de662c47eea0fe55c0a8465e45c",
+      "message": "feat: auto-exit for TypeScript BYODB scripts — remove manual `storage.close()` requirement (#487)",
+      "date": "2026-05-07T19:45:47Z",
+      "files": [
+        {
+          "filename": "CONTRIBUTING.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 2,
+          "changes": 3
+        },
+        {
+          "filename": "core/bindings/node/src/engine.rs",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "changes": 11
+        },
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/sqlite-typescript.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 3,
+          "changes": 4
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typeorm.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 4,
+          "changes": 5
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-installation.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 12,
+          "changes": 14
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 5,
+          "changes": 5
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-anthropic.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-gemini.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 3,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-openai.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 3,
+          "changes": 3
+        },
+        {
+          "filename": "memori-ts/README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 2,
+          "changes": 3
+        },
+        {
+          "filename": "memori-ts/examples/cockroachdb/main.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "memori-ts/examples/mysql/main.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "memori-ts/examples/orm/typeorm-sqlite.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "memori-ts/examples/postgres/main.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "memori-ts/examples/sqlite/main.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "memori-ts/examples/sqlite/rust_core_main.ts",
+          "status": "modified",
+          "additions": 24,
+          "deletions": 28,
+          "changes": 52
+        },
+        {
+          "filename": "memori-ts/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "memori-ts/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/src/memori.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 4,
+          "changes": 4
+        },
+        {
+          "filename": "memori-ts/tests/engines/recall.test.ts",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        }
+      ],
+      "stats": {
+        "total": 132,
+        "additions": 47,
+        "deletions": 85
+      }
+    },
+    {
+      "sha": "3ee9211b22e6ea8440087f4a73fabdb24a4386b2",
+      "message": "docs: revert Trendshift alt text to Trendshif (#488)\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-08T15:52:06Z",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 3,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 4,
+        "additions": 1,
+        "deletions": 3
+      }
+    },
+    {
+      "sha": "b3c060f1d8450626d72e3a80d8b03c8fc001ba69",
+      "message": "Remove TypeORM support and overhaul TypeScript BYODB docs (#489)\n\n* Remove TypeORM adapter and add ORM docs\n\nRemove the TypeORM-specific storage adapter, its tests, and TypeORM example files; simplify memori-ts to be ORM-agnostic. Add a new ORMs (TypeScript) guide plus TypeScript-specific docs for Advanced Augmentation and Async Patterns, and update various database/quickstart docs (add mem.recall examples, storage build checks, and an Anthropic model bump). Clean up memori-ts package.json (remove typeorm script/dep/devDep), update storage manager to stop importing the adapter, and update README and example README content to explain sharing raw pools with any ORM.\n\n* bump version number",
+      "date": "2026-05-08T21:01:57Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/concepts/typescript-advanced-augmentation.mdx",
+          "status": "added",
+          "additions": 136,
+          "deletions": 0,
+          "changes": 136
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/typescript-async-patterns.mdx",
+          "status": "added",
+          "additions": 141,
+          "deletions": 0,
+          "changes": 141
+        },
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb-typescript.mdx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql-typescript.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres-typescript.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-byodb/databases/sqlite-typescript.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typeorm.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 152,
+          "changes": 152
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typescript-orm.mdx",
+          "status": "added",
+          "additions": 169,
+          "deletions": 0,
+          "changes": 169
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-installation.mdx",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 37,
+          "changes": 51
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 1,
+          "changes": 11
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-anthropic.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        },
+        {
+          "filename": "memori-ts/README.md",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 13,
+          "changes": 16
+        },
+        {
+          "filename": "memori-ts/examples/README.md",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 35,
+          "changes": 35
+        },
+        {
+          "filename": "memori-ts/examples/orm/README.md",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 7,
+          "changes": 25
+        },
+        {
+          "filename": "memori-ts/examples/orm/typeorm-sqlite.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 63,
+          "changes": 63
+        },
+        {
+          "filename": "memori-ts/package-lock.json",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 826,
+          "changes": 834
+        },
+        {
+          "filename": "memori-ts/package.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 8,
+          "changes": 10
+        },
+        {
+          "filename": "memori-ts/src/storage/adapters/typeorm.ts",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 79,
+          "changes": 79
+        },
+        {
+          "filename": "memori-ts/src/storage/manager.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 2,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/tests/storage/adapters.test.ts",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 107,
+          "changes": 107
+        }
+      ],
+      "stats": {
+        "total": 1851,
+        "additions": 517,
+        "deletions": 1334
+      }
+    },
+    {
+      "sha": "fecdbb3be856cd3412cca52ffecd417521e71e35",
+      "message": "fix(openclaw): declare missing tool contracts and register signup before config guard (#490)\n\n* Split tools into utility and authenticated\n\nRefactor tool registration by replacing registerAllTools with registerUtilityTools and registerAuthenticatedTools. Initialize logger and skills content earlier and register utility tools (e.g. signup) before config validation so signup is available even without apiKey/entityId; register authenticated tools (recall, summary, feedback, quota) after validation. Add memori_signup and memori_quota to the plugin manifest and bump package version to 0.0.13.\n\n* Update openclaw.plugin.json",
+      "date": "2026-05-08T23:39:30Z",
+      "files": [
+        {
+          "filename": "integrations/openclaw/openclaw.plugin.json",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 2,
+          "changes": 10
+        },
+        {
+          "filename": "integrations/openclaw/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "integrations/openclaw/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/openclaw/src/index.ts",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 5,
+          "changes": 12
+        },
+        {
+          "filename": "integrations/openclaw/src/tools/index.ts",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 2,
+          "changes": 7
+        }
+      ],
+      "stats": {
+        "total": 35,
+        "additions": 23,
+        "deletions": 12
+      }
+    },
+    {
+      "sha": "d915e691117efcff71814e76848f9ab9e4631e55",
+      "message": "docs: remove DB connection strings; add Prisma (#491)\n\nRemove hardcoded connection string tables from CockroachDB, MySQL, and Postgres docs to avoid duplicative/fragile examples. Add a Prisma integration section to the TypeScript ORM guide demonstrating sharing a pg.Pool with @prisma/adapter-pg and Memori. Update the Anthropic TypeScript LLM doc to mark streamed responses as not supported and replace the streaming example with a multi-turn example using sequential messages.create calls.",
+      "date": "2026-05-11T14:06:06Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 8,
+          "changes": 8
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 9,
+          "changes": 9
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres-typescript.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 10,
+          "changes": 10
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typescript-orm.mdx",
+          "status": "modified",
+          "additions": 37,
+          "deletions": 0,
+          "changes": 37
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-anthropic.mdx",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 9,
+          "changes": 26
+        }
+      ],
+      "stats": {
+        "total": 90,
+        "additions": 54,
+        "deletions": 36
+      }
+    },
+    {
+      "sha": "97a99f3656d711f88a6c10787f8bd3eda75ddd7d",
+      "message": "Bump Node.js requirement to 20 (#492)\n\nRaise the minimum Node.js version to 20 across the repo: update CONTRIBUTING.md and the TypeScript quickstart docs for memori-byodb and memori-cloud. Also update memori-ts package.json engines to require Node >=20 and add a Trendshift badge to memori-ts README.",
+      "date": "2026-05-11T14:49:08Z",
+      "files": [
+        {
+          "filename": "CONTRIBUTING.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-cloud/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "memori-ts/README.md",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "changes": 4
+        },
+        {
+          "filename": "memori-ts/package-lock.json",
+          "status": "modified",
+          "additions": 357,
+          "deletions": 323,
+          "changes": 680
+        },
+        {
+          "filename": "memori-ts/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 692,
+        "additions": 364,
+        "deletions": 328
+      }
+    },
+    {
+      "sha": "78f8f65474f90369a15e3c82fece69b74b6ff57f",
+      "message": "Enhance Memori installation process for Hermes integration (#493)\n\n- Added `hermes-memori install` command to the README and quickstart documentation to clarify installation steps.\n- Implemented an installer CLI for the Memori memory provider, allowing users to install, uninstall, and check the status of the provider.\n- Updated the `pyproject.toml` to include the new command as a script entry point.\n- Added tests for the installation functionality to ensure proper behavior and error handling.",
+      "date": "2026-05-11T19:33:13Z",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/quickstart.mdx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 2,
+          "changes": 7
+        },
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6
+        },
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5
+        },
+        {
+          "filename": "integrations/hermes/src/memori_hermes/install.py",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0,
+          "changes": 149
+        },
+        {
+          "filename": "integrations/hermes/tests/test_install.py",
+          "status": "added",
+          "additions": 114,
+          "deletions": 0,
+          "changes": 114
+        }
+      ],
+      "stats": {
+        "total": 282,
+        "additions": 279,
+        "deletions": 3
+      }
+    },
+    {
+      "sha": "2543596b0b2e4dae7220cebc6760ee6dfd4ea56f",
+      "message": "Merged Python and TypeScript BYODB pages, updated AI models in examples (#494)\n\n* docs: merge Python and TypeScript BYODB pages, update models, fix Gemini SDK\n\n- Merge Python + TypeScript LLM pages (OpenAI, Anthropic, Gemini) into single pages with CodeGroup tabs\n- Merge Python + TypeScript database pages (SQLite, PostgreSQL, MySQL, CockroachDB) into single pages\n- Merge Python + TypeScript concept pages (Async Patterns, Advanced Augmentation) into single pages\n- Delete 9 now-redundant TypeScript-only pages\n- Update all model names to latest: gpt-4.1-mini, claude-sonnet-4-6, gemini-2.5-flash\n- Fix Gemini Python SDK from deprecated google-generativeai to google-genai\n- Fix AWS Bedrock model IDs to cross-region inference profile format\n- Alphabetize database driver listings across installation and database pages\n\n* docs: fix Anthropic TypeScript streaming — supported via messages.create stream:true\n\n---------\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-12T16:23:57Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/concepts/advanced-augmentation.mdx",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 2,
+          "changes": 38
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/async-patterns.mdx",
+          "status": "modified",
+          "additions": 148,
+          "deletions": 15,
+          "changes": 163
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/how-memory-works.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/multi-user-support.mdx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 5,
+          "changes": 10
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/typescript-advanced-augmentation.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 136,
+          "changes": 136
+        },
+        {
+          "filename": "docs/memori-byodb/concepts/typescript-async-patterns.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 141,
+          "changes": 141
+        },
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb-typescript.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 110,
+          "changes": 110
+        },
+        {
+          "filename": "docs/memori-byodb/databases/cockroachdb.mdx",
+          "status": "modified",
+          "additions": 96,
+          "deletions": 6,
+          "changes": 102
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mongodb.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql-typescript.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 104,
+          "changes": 104
+        },
+        {
+          "filename": "docs/memori-byodb/databases/mysql.mdx",
+          "status": "modified",
+          "additions": 92,
+          "deletions": 8,
+          "changes": 100
+        },
+        {
+          "filename": "docs/memori-byodb/databases/oracle.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres-typescript.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 104,
+          "changes": 104
+        },
+        {
+          "filename": "docs/memori-byodb/databases/postgres.mdx",
+          "status": "modified",
+          "additions": 116,
+          "deletions": 27,
+          "changes": 143
+        },
+        {
+          "filename": "docs/memori-byodb/databases/sqlite-typescript.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 97,
+          "changes": 97
+        },
+        {
+          "filename": "docs/memori-byodb/databases/sqlite.mdx",
+          "status": "modified",
+          "additions": 89,
+          "deletions": 9,
+          "changes": 98
+        },
+        {
+          "filename": "docs/memori-byodb/databases/tidb.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/databases/typescript-orm.mdx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 5,
+          "changes": 10
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/installation.mdx",
+          "status": "modified",
+          "additions": 51,
+          "deletions": 47,
+          "changes": 98
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/python-quickstart.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-installation.mdx",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 9,
+          "changes": 18
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/use-cases.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        },
+        {
+          "filename": "docs/memori-byodb/index.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/llm/agno.mdx",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 6,
+          "changes": 12
+        },
+        {
+          "filename": "docs/memori-byodb/llm/anthropic.mdx",
+          "status": "modified",
+          "additions": 141,
+          "deletions": 15,
+          "changes": 156
+        },
+        {
+          "filename": "docs/memori-byodb/llm/aws-bedrock.mdx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 5,
+          "changes": 10
+        },
+        {
+          "filename": "docs/memori-byodb/llm/gemini.mdx",
+          "status": "modified",
+          "additions": 32,
+          "deletions": 61,
+          "changes": 93
+        },
+        {
+          "filename": "docs/memori-byodb/llm/langchain.mdx",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 14,
+          "changes": 20
+        },
+        {
+          "filename": "docs/memori-byodb/llm/openai.mdx",
+          "status": "modified",
+          "additions": 139,
+          "deletions": 22,
+          "changes": 161
+        },
+        {
+          "filename": "docs/memori-byodb/llm/overview.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "docs/memori-byodb/llm/pydantic-ai.mdx",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 5,
+          "changes": 10
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-anthropic.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 113,
+          "changes": 113
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-gemini.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 124,
+          "changes": 124
+        },
+        {
+          "filename": "docs/memori-byodb/llm/typescript-openai.mdx",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 134,
+          "changes": 134
+        },
+        {
+          "filename": "docs/memori-cloud/getting-started/installation.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 4,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 2341,
+        "additions": 997,
+        "deletions": 1344
+      }
+    },
+    {
+      "sha": "8777417a02dd863dd58f961a82d3307f02855a1f",
+      "message": "docs: remove LangChain, xAI Grok, Nebius AI Studio, AWS Bedrock, and Pydantic AI from Install Your LLM Provider (#496)\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-12T17:00:45Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/getting-started/installation.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 3,
+          "changes": 3
+        },
+        {
+          "filename": "docs/memori-cloud/getting-started/installation.mdx",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 19,
+          "changes": 19
+        }
+      ],
+      "stats": {
+        "total": 22,
+        "additions": 0,
+        "deletions": 22
+      }
+    },
+    {
+      "sha": "d119218c9342da06592587d2f764f6e8f53818e8",
+      "message": "feat: add pull request template for improved contribution guidelines (#498)\n\n- Introduced a new pull request template to standardize submissions.\n- Included sections for describing changes, related issues, testing methods, and a checklist for contributors.\n- Aims to enhance clarity and consistency in PR submissions.",
+      "date": "2026-05-13T14:14:23Z",
+      "files": [
+        {
+          "filename": ".github/pull_request_template.md",
+          "status": "added",
+          "additions": 65,
+          "deletions": 0,
+          "changes": 65
+        }
+      ],
+      "stats": {
+        "total": 65,
+        "additions": 65,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "1280500cae6efc71d72bf7d8926d39dfa9710d67",
+      "message": "docs: accuracy improvements across BYODB and Cloud documentation (#500)",
+      "date": "2026-05-13T21:35:04Z",
+      "files": [
+        {
+          "filename": "docs/memori-byodb/concepts/knowledge-graph.mdx",
+          "status": "modified",
+          "additions": 12,
+          "deletions": 10,
+          "changes": 22
+        },
+        {
+          "filename": "docs/memori-byodb/contribute/development-setup.mdx",
+          "status": "modified",
+          "additions": 61,
+          "deletions": 52,
+          "changes": 113
+        },
+        {
+          "filename": "docs/memori-byodb/contribute/overview.mdx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "changes": 4
+        },
+        {
+          "filename": "docs/memori-byodb/getting-started/typescript-quickstart.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "docs/memori-byodb/llm/agno.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/aws-bedrock.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/deepseek.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/langchain.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/nebius.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/overview.mdx",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 14,
+          "changes": 28
+        },
+        {
+          "filename": "docs/memori-byodb/llm/pydantic-ai.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/llm/xai-grok.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-byodb/support/faq.mdx",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 9,
+          "changes": 29
+        },
+        {
+          "filename": "docs/memori-byodb/support/troubleshooting.mdx",
+          "status": "modified",
+          "additions": 107,
+          "deletions": 17,
+          "changes": 124
+        },
+        {
+          "filename": "docs/memori-cloud/llm/gemini.mdx",
+          "status": "modified",
+          "additions": 44,
+          "deletions": 30,
+          "changes": 74
+        },
+        {
+          "filename": "docs/memori-cloud/llm/langchain.mdx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 10,
+          "changes": 11
+        },
+        {
+          "filename": "docs/memori-cloud/llm/overview.mdx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "docs/memori-cloud/support/faq.mdx",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 8,
+          "changes": 21
+        },
+        {
+          "filename": "docs/memori-cloud/support/troubleshooting.mdx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 11,
+          "changes": 13
+        }
+      ],
+      "stats": {
+        "total": 456,
+        "additions": 289,
+        "deletions": 167
+      }
+    },
+    {
+      "sha": "4176ecd1a4a04a14cc010c5b9ce1bd2237380b21",
+      "message": "fix: widen _request_headers return type to satisfy type checker (#502)\n\nCo-authored-by: Jay <jay@memorilabs.ai>",
+      "date": "2026-05-14T15:16:07Z",
+      "files": [
+        {
+          "filename": "memori/embeddings/_tei.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "51f45d4acbc74f87df47fbb37c6441b0dd6bb2b2",
+      "message": "add hermes skill file (#499)\n\nCo-authored-by: Ryan Kruse",
+      "date": "2026-05-14T15:22:20Z",
+      "files": [
+        {
+          "filename": "docs/memori-cloud/hermes/agent-skills.md",
+          "status": "added",
+          "additions": 248,
+          "deletions": 0,
+          "changes": 248
+        }
+      ],
+      "stats": {
+        "total": 248,
+        "additions": 248,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "61d79011aad420df27c9067fedc281d7857929bb",
+      "message": "test: add unit tests for recall formatting functions and format_date_created (#501)\n\nCo-authored-by: Dave Heritage <david@memorilabs.ai>",
+      "date": "2026-05-15T01:30:22Z",
+      "files": [
+        {
+          "filename": "tests/llm/pipelines/test_recall_injection.py",
+          "status": "added",
+          "additions": 151,
+          "deletions": 0,
+          "changes": 151
+        },
+        {
+          "filename": "tests/test_utils.py",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 1,
+          "changes": 10
+        }
+      ],
+      "stats": {
+        "total": 161,
+        "additions": 160,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "9f71ad9edded47e5a543738923469d72c953d19e",
+      "message": "fixed (LLM) : safely parse OpenAI multimodal arrays in query extraction (#505)\n\n* fix: ensure extract_user_query safely parses OpenAI multimodal content arrays to strict strings\n\n* fix: resolve lint issues\n\n* chore: remove unrelated study notes from PR",
+      "date": "2026-05-15T15:04:09Z",
+      "files": [
+        {
+          "filename": "memori/llm/helpers/query_extraction.py",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 3,
+          "changes": 11
+        },
+        {
+          "filename": "tests/llm/helpers/test_query_extraction.py",
+          "status": "added",
+          "additions": 59,
+          "deletions": 0,
+          "changes": 59
+        }
+      ],
+      "stats": {
+        "total": 70,
+        "additions": 67,
+        "deletions": 3
+      }
+    },
+    {
+      "sha": "c878eac8a8eab1433d37a041162b367a5e49eb46",
+      "message": "fix(skills): restrict recall filters to valid source/signal pairs (#503)\n\n* fix(skills): restrict recall filters to valid source/signal pairs\n\nPreviously, `source` and `signal` were exposed as independent enums,\nallowing agents to generate invalid combinations.\n\nReplace them with a centralized list of the 9 valid `(source, signal)`\npairs and document that any other combination must not be sent to\n`memori_recall`.\n\n* Bump package version for OC npm\n\n* Validate source/signal pairs in memori_recall\n\nEnforce and validate (source, signal) pairs for the memori_recall tool. Updated parameter descriptions to require source and signal to be set together and added a VALID_PAIRS mapping that checks allowed pairs. If only one is provided or the pair is invalid, the tool now returns a structured error, logs a warning, and skips the recall. Adjusted existing tests to use the correct (fact, verification) example and added a new test suite covering missing, invalid, omitted, and all valid (source, signal) pairs.\n\n* Fixed linting and format errors\n\n* Refine documentation for memori_recall to clarify source/signal pair requirements.\n\n---------\n\nCo-authored-by: Ryan Kruse <rpkruse1@gmail.com>\nCo-authored-by: Dave Heritage <david@memorilabs.ai>",
+      "date": "2026-05-15T15:26:35Z",
+      "files": [
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-cloud/hermes/agent-skills.md",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 8,
+          "changes": 27
+        },
+        {
+          "filename": "docs/memori-cloud/openclaw/agent-skills.md",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 27,
+          "changes": 47
+        },
+        {
+          "filename": "docs/memori-cloud/openclaw/overview.mdx",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 22,
+          "changes": 37
+        },
+        {
+          "filename": "integrations/hermes/README.md",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 24,
+          "changes": 39
+        },
+        {
+          "filename": "integrations/openclaw/package-lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "integrations/openclaw/package.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "integrations/openclaw/skills/memori/SKILL.md",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 27,
+          "changes": 47
+        },
+        {
+          "filename": "integrations/openclaw/src/tools/memori-recall.ts",
+          "status": "modified",
+          "additions": 39,
+          "deletions": 2,
+          "changes": 41
+        },
+        {
+          "filename": "integrations/openclaw/tests/tools/memori-recall.test.ts",
+          "status": "modified",
+          "additions": 93,
+          "deletions": 16,
+          "changes": 109
+        }
+      ],
+      "stats": {
+        "total": 354,
+        "additions": 225,
+        "deletions": 129
+      }
+    },
+    {
+      "sha": "f2022d13959c839e436ea5597439a1f5f9682f9e",
+      "message": "Update Memori MCP documentation and configuration for improved tool usage (#506)\n\n- Added new `SKILL.md` file detailing the usage of Memori tools for targeted recall, summaries, and durable memory augmentation.\n- Updated existing documentation to reflect changes in tool names from `recall` and `advanced_augmentation` to `memori_recall`, `memori_recall_summary`, and `memori_advanced_augmentation`.\n- Adjusted client setup instructions to include new tool names and functionalities.",
+      "date": "2026-05-15T15:46:58Z",
+      "files": [
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1,
+          "changes": 1
+        },
+        {
+          "filename": "docs/memori-cloud/mcp/agent-skills.mdx",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 97,
+          "changes": 108
+        },
+        {
+          "filename": "docs/memori-cloud/mcp/client-setup.mdx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "docs/memori-cloud/mcp/overview.mdx",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 10,
+          "changes": 38
+        },
+        {
+          "filename": "docs/memori-cloud/mcp/skills/memori-mcp/SKILL.md",
+          "status": "added",
+          "additions": 288,
+          "deletions": 0,
+          "changes": 288
+        }
+      ],
+      "stats": {
+        "total": 443,
+        "additions": 331,
+        "deletions": 112
+      }
+    },
+    {
+      "sha": "57217f06be44abce87dfdb71b15c5f37fb741707",
+      "message": "Update version to 0.1.5 in pyproject.toml for hermes-memori (#507)",
+      "date": "2026-05-15T17:26:20Z",
+      "files": [
+        {
+          "filename": "integrations/hermes/pyproject.toml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    }
+  ]
+}

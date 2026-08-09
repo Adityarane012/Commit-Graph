@@ -1,0 +1,126 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#131318","on-primary-container":"#0d0096","secondary-container":"#6f00be","secondary-fixed":"#f0dbff","on-surface":"#e4e1e9","surface-bright":"#39383e","primary-container":"#8083ff","inverse-surface":"#e4e1e9","secondary":"#ddb7ff","secondary-fixed-dim":"#ddb7ff","on-secondary-fixed":"#2c0051","outline-variant":"#464554","surface-container-highest":"#35343a","surface-container-lowest":"#0e0e13","surface-container-low":"#1b1b20","surface-container-high":"#2a292f","on-tertiary-fixed":"#001f26","on-tertiary-container":"#002f38","on-error":"#690005","on-error-container":"#ffdad6","on-primary-fixed-variant":"#2f2ebe","primary-fixed":"#e1e0ff","on-secondary-container":"#d6a9ff","inverse-primary":"#494bd6","tertiary-fixed-dim":"#4cd7f6","tertiary":"#4cd7f6","surface-container":"#1f1f25","background":"#131318","surface-variant":"#35343a","surface-tint":"#c0c1ff","on-background":"#e4e1e9","on-tertiary-fixed-variant":"#004e5c","on-primary":"#1000a9","on-secondary":"#490080","tertiary-fixed":"#acedff","inverse-on-surface":"#303036","primary":"#c0c1ff","outline":"#908fa0","on-secondary-fixed-variant":"#6900b3","on-tertiary":"#003640","error":"#ffb4ab","on-primary-fixed":"#07006c","surface-dim":"#131318","primary-fixed-dim":"#c0c1ff","error-container":"#93000a","on-surface-variant":"#c7c4d7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"16px","margin-desktop":"64px","max-width":"1440px","unit":"4px","gutter":"24px"},"fontFamily":{"headline-lg":["Inter"],"code-sm":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"display-hero":["Inter"]},"fontSize":{"headline-lg":["clamp(1.75rem, 5vw, 2.5rem)",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"code-sm":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"label-caps":["0.75rem",{"lineHeight":"1","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["1rem",{"lineHeight":"1.6","fontWeight":"300"}],"headline-md":["1.5rem",{"lineHeight":"1.4","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"300"}],"display-hero":["clamp(2.5rem, 8vw, 4.5rem)",{"lineHeight":"1.1","letterSpacing":"-0.04em","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5"><div class="h-16 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-6"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn8fU06__Tz_zxsyGBvxph1IdisYLp10npx_gafnTrYUJoG455cqWSdNLfpGyVO9W-vo2yG8KKR3uXZaiksDfKBm7axMTiEFNjdIEqkT4ebYUVcXf0YVKuMnA3Plugd3xwme0BdBC_goBaNpw57ZR0sq3F0t4j5qPsUYVjgNmOVqTqN6VNWfobUIzrWYjTjI-l-GTxWIqa74KgnqXnxeSw8ljSuUuadrEj23pUbBYQNfhnJN1XQLCfLg"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CommitGraph</span><nav class="hidden md:flex items-center gap-8 ml-8" data-active-classes="text-primary font-medium"><a aria-current="page" class="transition-colors text-primary font-medium" data-path="dashboard" href="#">Dashboard</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors" data-path="repositories" href="#">Repositories</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors" data-path="documentation" href="#">Documentation</a></nav></div><div class="flex items-center gap-4"><div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant"><span class="w-2 h-2 rounded-full bg-[#238636] shadow-[0_0_8px_#238636]"></span><span class="font-code-sm text-code-sm text-on-surface-variant">GitHub Connected</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-margin-desktop min-h-screen bg-surface"><div class="flex flex-col w-full gap-gutter">
+<!-- Hero Section -->
+<section class="relative flex flex-col items-center justify-center py-24 text-center overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background animate-[pulse_4s_ease-in-out_infinite]"></div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<h1 class="font-display-hero text-display-hero text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">
+        Visualize Your Codebase's Evolution
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Deep analytics and dependency graphing for high-velocity engineering teams. Connect your repositories to instantly generate insightful commit graphs.
+      </p>
+<button class="relative group mt-8 px-8 py-4 bg-primary text-on-primary rounded-full font-label-caps text-label-caps overflow-hidden shadow-[0_0_20px_rgba(192,193,255,0.3)] hover:shadow-[0_0_30px_rgba(192,193,255,0.5)] transition-all duration-300">
+<span class="relative z-10 flex items-center gap-2">
+          Connect GitHub
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</button>
+</div>
+</section>
+<!-- Global Stats Bar -->
+<section class="flex flex-wrap items-center justify-center gap-8 py-8 border-y border-white/5 bg-surface-container-lowest/50 backdrop-blur-md">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Total Repositories</span>
+<span class="font-code-sm text-headline-lg text-secondary">1,240</span>
+</div>
+<div class="w-px h-12 bg-white/10 hidden sm:block"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Total Commits Tracked</span>
+<span class="font-code-sm text-headline-lg text-tertiary">89,432</span>
+</div>
+<div class="w-px h-12 bg-white/10 hidden md:block"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active Developers</span>
+<span class="font-code-sm text-headline-lg text-primary">451</span>
+</div>
+</section>
+<!-- Repository Grid -->
+<section class="flex flex-col gap-8 py-12">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Trending Repositories</h2>
+<a class="font-label-caps text-label-caps text-primary hover:text-tertiary transition-colors flex items-center gap-1" href="#">
+        View All <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container/70 backdrop-blur-[10px] rounded-xl p-6 border border-white/10 transition-all duration-300 hover:bg-surface-container-high/80 hover:-translate-y-1">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-tertiary opacity-0 group-hover:opacity-100 group-hover:shadow-[0_0_20px_rgba(192,193,255,0.4)] transition-all duration-300 rounded-t-xl"></div>
+<div class="flex flex-col h-full justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">code</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">facebook / react</h3>
+</div>
+<span class="px-2 py-1 bg-[#238636]/10 border border-[#238636]/30 text-[#238636] font-code-sm text-code-sm rounded">High Act.</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              A declarative, efficient, and flexible JavaScript library for building user interfaces.
+            </p>
+</div>
+<div class="flex items-center gap-4 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-[#e3b341]">star</span> 201k</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">call_split</span> 41.5k</div>
+<div class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#f1e05a]"></span> JS</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container/70 backdrop-blur-[10px] rounded-xl p-6 border border-white/10 transition-all duration-300 hover:bg-surface-container-high/80 hover:-translate-y-1">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-tertiary opacity-0 group-hover:opacity-100 group-hover:shadow-[0_0_20px_rgba(192,193,255,0.4)] transition-all duration-300 rounded-t-xl"></div>
+<div class="flex flex-col h-full justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">deployed_code</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">vercel / next.js</h3>
+</div>
+<span class="px-2 py-1 bg-[#238636]/10 border border-[#238636]/30 text-[#238636] font-code-sm text-code-sm rounded">High Act.</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              The React Framework for the Web.
+            </p>
+</div>
+<div class="flex items-center gap-4 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-[#e3b341]">star</span> 105k</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">call_split</span> 24.1k</div>
+<div class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#3178c6]"></span> TS</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container/70 backdrop-blur-[10px] rounded-xl p-6 border border-white/10 transition-all duration-300 hover:bg-surface-container-high/80 hover:-translate-y-1">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary to-tertiary opacity-0 group-hover:opacity-100 group-hover:shadow-[0_0_20px_rgba(192,193,255,0.4)] transition-all duration-300 rounded-t-xl"></div>
+<div class="flex flex-col h-full justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">memory</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">groq / groq-api</h3>
+</div>
+<span class="px-2 py-1 bg-tertiary/10 border border-tertiary/30 text-tertiary font-code-sm text-code-sm rounded">Trending</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Official SDKs and examples for interacting with the Groq API.
+            </p>
+</div>
+<div class="flex items-center gap-4 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-[#e3b341]">star</span> 4.2k</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">call_split</span> 380</div>
+<div class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#3572A5]"></span> Python</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant py-12 px-margin-desktop"><div class="flex flex-col md:flex-row justify-between items-center gap-6"><div class="flex items-center gap-2 text-on-surface-variant"><img alt="Logo" class="h-5 w-auto grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn8fU06__Tz_zxsyGBvxph1IdisYLp10npx_gafnTrYUJoG455cqWSdNLfpGyVO9W-vo2yG8KKR3uXZaiksDfKBm7axMTiEFNjdIEqkT4ebYUVcXf0YVKuMnA3Plugd3xwme0BdBC_goBaNpw57ZR0sq3F0t4j5qPsUYVjgNmOVqTqN6VNWfobUIzrWYjTjI-l-GTxWIqa74KgnqXnxeSw8ljSuUuadrEj23pUbBYQNfhnJN1XQLCfLg"/><span class="font-label-caps text-label-caps uppercase">CommitGraph © 2024</span></div><div class="flex gap-8"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Security</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Status</a></div></div></footer></body></html>

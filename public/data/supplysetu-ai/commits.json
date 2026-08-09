@@ -1,0 +1,1396 @@
+{
+  "repo": {
+    "key": "supplysetu-ai",
+    "name": "SupplySetu-AI",
+    "owner": "Adityarane012",
+    "description": "AI-powered supply chain management",
+    "url": "https://github.com/Adityarane012/SupplySetu-AI",
+    "commitCount": 39,
+    "fetchedAt": "2026-08-09T10:24:03.645Z"
+  },
+  "commits": [
+    {
+      "sha": "b7bcdd03d48621e7f156039ee7e5d8700b6eacfd",
+      "message": "Fix dashboard and analytics KPI sync and labels",
+      "author": "Aditya Rane",
+      "date": "2026-06-14T17:08:27Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/b7bcdd03d48621e7f156039ee7e5d8700b6eacfd",
+      "files": [
+        {
+          "filename": "frontend/src/app/analytics/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 7,
+          "changes": 18
+        }
+      ],
+      "stats": {
+        "total": 22,
+        "additions": 13,
+        "deletions": 9
+      }
+    },
+    {
+      "sha": "a2e77d84838accd9738e4d850e834e9e0f12fc50",
+      "message": "Fix analytics TS errors, improve database seed data, configure Next.js for Vercel, and update favicon",
+      "author": "Aditya Rane",
+      "date": "2026-06-14T16:36:21Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/a2e77d84838accd9738e4d850e834e9e0f12fc50",
+      "files": [
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 0,
+          "changes": 9
+        },
+        {
+          "filename": "backend/routers/analytics.py",
+          "status": "modified",
+          "additions": 21,
+          "deletions": 7,
+          "changes": 28
+        },
+        {
+          "filename": "backend/scripts/schema.sql",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "backend/scripts/seed_db.py",
+          "status": "modified",
+          "additions": 50,
+          "deletions": 32,
+          "changes": 82
+        },
+        {
+          "filename": "frontend/next.config.ts",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6
+        },
+        {
+          "filename": "frontend/src/app/analytics/page.tsx",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 9,
+          "changes": 44
+        },
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 105,
+          "deletions": 248,
+          "changes": 353
+        },
+        {
+          "filename": "frontend/src/app/favicon.ico",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "frontend/src/app/globals.css",
+          "status": "modified",
+          "additions": 23,
+          "deletions": 137,
+          "changes": 160
+        },
+        {
+          "filename": "frontend/src/app/icon.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "frontend/src/app/orders/page.tsx",
+          "status": "modified",
+          "additions": 114,
+          "deletions": 238,
+          "changes": 352
+        },
+        {
+          "filename": "frontend/src/app/route-map/page.tsx",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 226,
+          "changes": 229
+        },
+        {
+          "filename": "frontend/src/components/DeliveryMap.tsx",
+          "status": "modified",
+          "additions": 95,
+          "deletions": 25,
+          "changes": 120
+        },
+        {
+          "filename": "frontend/src/components/MapWrapper.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 1389,
+        "additions": 464,
+        "deletions": 925
+      }
+    },
+    {
+      "sha": "776a8b64fd0fbfd93be3139cbb482a7883f8f5db",
+      "message": "chore: add frontend .env.example",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T13:29:43Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/776a8b64fd0fbfd93be3139cbb482a7883f8f5db",
+      "files": [
+        {
+          "filename": "frontend/.env.example",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "changes": 11
+        }
+      ],
+      "stats": {
+        "total": 11,
+        "additions": 11,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "382559f03f8f60ccc9ce89c12fee4bffc375eed3",
+      "message": "chore: add .env.example files for easier local setup",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T13:29:35Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/382559f03f8f60ccc9ce89c12fee4bffc375eed3",
+      "files": [
+        {
+          "filename": "backend/.env.example",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "changes": 21
+        }
+      ],
+      "stats": {
+        "total": 21,
+        "additions": 21,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "5086c3b5b43f4d224ed3507b70c84a59c699136f",
+      "message": "docs: update README with Twilio and DB setup instructions",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T12:42:31Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/5086c3b5b43f4d224ed3507b70c84a59c699136f",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 29,
+          "deletions": 8,
+          "changes": 37
+        }
+      ],
+      "stats": {
+        "total": 37,
+        "additions": 29,
+        "deletions": 8
+      }
+    },
+    {
+      "sha": "ec8a80d228aff2bb043ea828294441e5614a0779",
+      "message": "feat: complete end-to-end Twilio WhatsApp webhook, unify frontend UI, and define schema",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T12:21:41Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/ec8a80d228aff2bb043ea828294441e5614a0779",
+      "files": [
+        {
+          "filename": "backend/main.py",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 2,
+          "changes": 15
+        },
+        {
+          "filename": "backend/requirements.txt",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "backend/routers/transcribe.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "backend/routers/whatsapp.py",
+          "status": "added",
+          "additions": 148,
+          "deletions": 0,
+          "changes": 148
+        },
+        {
+          "filename": "backend/scripts/schema.sql",
+          "status": "added",
+          "additions": 40,
+          "deletions": 0,
+          "changes": 40
+        },
+        {
+          "filename": "backend/scripts/seed_db.py",
+          "status": "added",
+          "additions": 77,
+          "deletions": 0,
+          "changes": 77
+        },
+        {
+          "filename": "backend/services/whisper_service.py",
+          "status": "modified",
+          "additions": 97,
+          "deletions": 22,
+          "changes": 119
+        },
+        {
+          "filename": "docs/SA_Implementation.md",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 8,
+          "changes": 16
+        },
+        {
+          "filename": "docs/improve.md",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0,
+          "changes": 24
+        },
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 248,
+          "deletions": 105,
+          "changes": 353
+        },
+        {
+          "filename": "frontend/src/app/globals.css",
+          "status": "modified",
+          "additions": 137,
+          "deletions": 23,
+          "changes": 160
+        },
+        {
+          "filename": "frontend/src/app/orders/page.tsx",
+          "status": "modified",
+          "additions": 238,
+          "deletions": 114,
+          "changes": 352
+        },
+        {
+          "filename": "frontend/src/app/route-map/page.tsx",
+          "status": "modified",
+          "additions": 226,
+          "deletions": 3,
+          "changes": 229
+        },
+        {
+          "filename": "frontend/src/components/DeliveryMap.tsx",
+          "status": "modified",
+          "additions": 25,
+          "deletions": 95,
+          "changes": 120
+        },
+        {
+          "filename": "frontend/src/components/MapWrapper.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "graphify-out/.graphify_labels.json",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5
+        },
+        {
+          "filename": "graphify-out/GRAPH_REPORT.md",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 33,
+          "changes": 80
+        },
+        {
+          "filename": "graphify-out/cache/ast/009a4bee0731347ba2e8397699d56e51a32beb268351f74819370526f094d7ff.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/0202bbaad0e71fbf0c4cb44542d651174aa004ff067bb99059026e93bd3bd5b6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/1c3319d30008f60f87d21e9f1f9cc614a68ed5ed00bd857a1ce2431001623a96.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/1ef2f240192a9f4010c6bdc1a3a33caa3d9a2bdaff85ec149840b2c5aa6e3ce2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/234e49b0e366ff834e54b357ac261d002ca002997b54f9e4405e636cf05403fb.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/39c56032f24c477ba966aa19746d832a215d31c0da89e65bb8eb36bc1963d145.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/50d1cfeaadf5dbe73f68557abd13a65e61116d663056b147e4a688126450e1d1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/5b4e236802b8aea182c410b8907b1378fd0119dfd9de8e6d1fde749f82dee153.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/6508579e722b1a1d326e09e3ff8a5fb5d9171193995498a83e58b1f98f335b1d.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/844c939a10271c95ec4480ee89fdd28d65aebf64a0a175066919f54ae9856035.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/89be16ca6800100796b6f1e776956539d4db28ca2a7c4a06b4cbc7b727be8267.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/9276c5a879ca0519e874c64a8e11f6402cdc315da23576e950a83e0db6de7d25.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/98d6391ed694a7b5bed6c7a175f3e7799d622684858cc2c79ec8e5eb5b4eb3a4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/a8bc47bcf4516c9a27da1234eefae801cfd5e4c9aee4d5450579b4bc45cc1e38.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/b95db09e03fdb18e623df5e3231ab7510e1666571a63a7ef455a4a4747fd9c9b.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/d8a60ab5751eeddb8a96f883319ecc5c4ea2327e4e5238a839c4cf5ef8f4f1df.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/ee1177d0e936234fc8a6b6242f97624a521af331beca610e7d3d400573622e88.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/f2c132563783bde4b88a545258d33dfbb562898621a8bc765a05d0eee7a798d9.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/stat-index.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "graphify-out/graph.html",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "graphify-out/graph.json",
+          "status": "modified",
+          "additions": 713,
+          "deletions": 177,
+          "changes": 890
+        },
+        {
+          "filename": "graphify-out/manifest.json",
+          "status": "modified",
+          "additions": 54,
+          "deletions": 34,
+          "changes": 88
+        }
+      ],
+      "stats": {
+        "total": 2753,
+        "additions": 2127,
+        "deletions": 626
+      }
+    },
+    {
+      "sha": "f1853a9bdedc835ad633fe574e13a6f7d7f607f3",
+      "message": "Add support for Marathi and Hindi relative dates in order extraction",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T09:22:06Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/f1853a9bdedc835ad633fe574e13a6f7d7f607f3",
+      "files": [
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "backend/services/llm_service.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "frontend/src/app/orders/new/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/components/DeliveryMap.tsx",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 1,
+          "changes": 19
+        }
+      ],
+      "stats": {
+        "total": 29,
+        "additions": 23,
+        "deletions": 6
+      }
+    },
+    {
+      "sha": "cddb2e1fa577bdabdc3389177cae3c0bda848874",
+      "message": "fix: update route optimization, simulator LLM prompt, and analytics unit display",
+      "author": "Aditya Rane",
+      "date": "2026-06-13T08:33:52Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/cddb2e1fa577bdabdc3389177cae3c0bda848874",
+      "files": [
+        {
+          "filename": "backend/routers/analytics.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5
+        },
+        {
+          "filename": "backend/routers/route.py",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 2,
+          "changes": 9
+        },
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "backend/services/llm_service.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "frontend/src/app/analytics/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "graphify-out/GRAPH_REPORT.md",
+          "status": "modified",
+          "additions": 41,
+          "deletions": 32,
+          "changes": 73
+        },
+        {
+          "filename": "graphify-out/cache/ast/036f7c6438881effe68f6a8ab5ddc3ca7522a99af93e6fe3b2d89bd4809c95ee.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/05ce14293c6f2a2359020e6ea3808f58612249d5b4a7b9f2b2ec6055ed32b701.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/0a9d90bb3ce6c18f88b7711341cea107b4437df434c85093d2f2acfed2bddefb.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/358d76f34a53ec4f256f7681f481b219a3a7d55330fa1f96d061fed3afef6a47.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/3f937def142ec42eff4f85fba88f2de456f1a07af6134e1e14251c2121d7e2f8.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/4a86bcf8e6b744ae9dbb9ced3765166e571b62d253a3262b4dda0e3a95225440.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/62223a424b01bd4d7f8e4cf0f96617e0a3514b10d6df396b4f4633f204083714.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/69f4287525b16a31f8d6447b8c755f441c7373631ee54038f70bb620674ed7a9.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/6f309cca040cd7f4f4d603d247bfaa5275904a179b2ad63ed8c411b772a48309.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/8a823be5abdbc7e82a1e306fbe2f65c9e8f8e40046f23b83ec22083b5d7d7557.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/904916da62c984d918c37441ef3f3bf1a59c7164742599b6b42732e12ff309ee.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/95a1767505b0f6726189f4d97ebda0636bf4938e9fb6ab712164709b88f1a469.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/c6f4401aff4a94f85a1b8bfe36f8fd624cd55eb2feb48e6905f75bdb9cbf7dd1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/d1ea59c89208629f3e57e7e61c6e42bfd3dc89bdcf50648ccbd8efcf55baae6f.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/da832afc2ab7dc2ff60cba0c3a41959a2bf177e060e60602bb1a5392304e299f.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/ast/df286c6c4a342ca2dd40a142264ecba196d4f2a4d2d62571b483e9e4dac088e4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        },
+        {
+          "filename": "graphify-out/cache/stat-index.json",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "graphify-out/graph.html",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "changes": 8
+        },
+        {
+          "filename": "graphify-out/graph.json",
+          "status": "modified",
+          "additions": 1141,
+          "deletions": 163,
+          "changes": 1304
+        },
+        {
+          "filename": "graphify-out/manifest.json",
+          "status": "modified",
+          "additions": 63,
+          "deletions": 33,
+          "changes": 96
+        }
+      ],
+      "stats": {
+        "total": 1519,
+        "additions": 1280,
+        "deletions": 239
+      }
+    },
+    {
+      "sha": "0f60b32b629fa44ec8d9199fb17a2c409a25d073",
+      "message": "chore: touch frontend file to trigger clean Vercel rebuild",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:54:25Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/0f60b32b629fa44ec8d9199fb17a2c409a25d073",
+      "files": [
+        {
+          "filename": "frontend/src/app/orders/new/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "eecffe9a0bce5887d7a364907450b08f86943c5d",
+      "message": "fix: improve LLM extraction prompt to handle long lists, emojis, decimals, and price mentions",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:28:08Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/eecffe9a0bce5887d7a364907450b08f86943c5d",
+      "files": [
+        {
+          "filename": "backend/services/llm_service.py",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 19,
+          "changes": 35
+        },
+        {
+          "filename": "debug_llm.py",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "changes": 28
+        }
+      ],
+      "stats": {
+        "total": 63,
+        "additions": 44,
+        "deletions": 19
+      }
+    },
+    {
+      "sha": "cf7112d840f0659a40360444cf289f4458c96a4f",
+      "message": "fix: update decommissioned Groq model llama3-8b-8192 to llama-3.1-8b-instant",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:23:34Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/cf7112d840f0659a40360444cf289f4458c96a4f",
+      "files": [
+        {
+          "filename": "backend/services/llm_service.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "test_type_tab.py",
+          "status": "added",
+          "additions": 346,
+          "deletions": 0,
+          "changes": 346
+        }
+      ],
+      "stats": {
+        "total": 348,
+        "additions": 347,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "03250028231c146e5fc3c04ea42b5297ba2229a2",
+      "message": "feat: add text input mode to New Order page with tab toggle, quick examples, and confidence bar",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:17:33Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/03250028231c146e5fc3c04ea42b5297ba2229a2",
+      "files": [
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        },
+        {
+          "filename": "frontend/src/app/orders/new/page.tsx",
+          "status": "modified",
+          "additions": 274,
+          "deletions": 81,
+          "changes": 355
+        },
+        {
+          "filename": "frontend/src/app/orders/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 359,
+        "additions": 276,
+        "deletions": 83
+      }
+    },
+    {
+      "sha": "5e8e8e136705d3cab8158c5d35b46b3323e210b9",
+      "message": "fix: resolve all 11 edge cases — audio validation, date sanitisation, schema validators, analytics fix, simulator UX",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:14:27Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/5e8e8e136705d3cab8158c5d35b46b3323e210b9",
+      "files": [
+        {
+          "filename": "backend/models/schemas.py",
+          "status": "modified",
+          "additions": 72,
+          "deletions": 2,
+          "changes": 74
+        },
+        {
+          "filename": "backend/routers/analytics.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 2,
+          "changes": 20
+        },
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 87,
+          "deletions": 22,
+          "changes": 109
+        },
+        {
+          "filename": "frontend/src/app/simulator/page.tsx",
+          "status": "modified",
+          "additions": 188,
+          "deletions": 87,
+          "changes": 275
+        }
+      ],
+      "stats": {
+        "total": 478,
+        "additions": 365,
+        "deletions": 113
+      }
+    },
+    {
+      "sha": "f7214090bad8d9c2da2a506219c709650e502315",
+      "message": "refactor: massively improve audio pipeline, LLM extraction, and simulator reply quality",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:09:12Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/f7214090bad8d9c2da2a506219c709650e502315",
+      "files": [
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 103,
+          "deletions": 47,
+          "changes": 150
+        },
+        {
+          "filename": "backend/services/llm_service.py",
+          "status": "modified",
+          "additions": 135,
+          "deletions": 49,
+          "changes": 184
+        },
+        {
+          "filename": "backend/services/whisper_service.py",
+          "status": "modified",
+          "additions": 97,
+          "deletions": 38,
+          "changes": 135
+        }
+      ],
+      "stats": {
+        "total": 469,
+        "additions": 335,
+        "deletions": 134
+      }
+    },
+    {
+      "sha": "054ae40dae26bdf965b53938685f3f36d579558a",
+      "message": "fix: always use Groq when key present + add graceful audio error handling",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T17:05:02Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/054ae40dae26bdf965b53938685f3f36d579558a",
+      "files": [
+        {
+          "filename": "backend/routers/simulator.py",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 1,
+          "changes": 11
+        },
+        {
+          "filename": "backend/services/whisper_service.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "changes": 6
+        }
+      ],
+      "stats": {
+        "total": 17,
+        "additions": 13,
+        "deletions": 4
+      }
+    },
+    {
+      "sha": "0621b2e841655fcfac98b12ec9aa68fb0c4c756b",
+      "message": "feat: add logo/favicon assets, replace text brand with logo across all pages",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T16:51:20Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/0621b2e841655fcfac98b12ec9aa68fb0c4c756b",
+      "files": [
+        {
+          "filename": "frontend/public/favicon.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "frontend/public/logo-dark.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "frontend/public/logo-main.png",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0
+        },
+        {
+          "filename": "frontend/src/app/analytics/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/app/layout.tsx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/app/orders/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        },
+        {
+          "filename": "frontend/src/app/page.tsx",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 18,
+        "additions": 11,
+        "deletions": 7
+      }
+    },
+    {
+      "sha": "30163e69cc0405b392b82c8635250adb47664e6d",
+      "message": "fix: remove date filter from analytics summary + add backend wake-up ping on load",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T16:45:05Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/30163e69cc0405b392b82c8635250adb47664e6d",
+      "files": [
+        {
+          "filename": "backend/routers/analytics.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 7,
+          "changes": 10
+        },
+        {
+          "filename": "frontend/src/app/analytics/page.tsx",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 2,
+          "changes": 6
+        },
+        {
+          "filename": "frontend/src/app/dashboard/page.tsx",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 18,
+        "additions": 9,
+        "deletions": 9
+      }
+    },
+    {
+      "sha": "4267c43df09d14b6b9e02b1640714f9e972bf365",
+      "message": "fix: add runtime.txt to force Python 3.11 on Render",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:37:32Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/4267c43df09d14b6b9e02b1640714f9e972bf365",
+      "files": [
+        {
+          "filename": "backend/runtime.txt",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+      }
+    },
+    {
+      "sha": "a36603099efda8b4275a59e31ab0d0fcfad337fd",
+      "message": "fix: unpin pydantic to allow Python 3.14 compatible wheel",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:37:03Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/a36603099efda8b4275a59e31ab0d0fcfad337fd",
+      "files": [
+        {
+          "filename": "backend/requirements.txt",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "359c0cfab1442555dcf02e771d0b9e9fa5912316",
+      "message": "fix: remove protobuf pin, conflicts with ortools>=9.12",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:35:02Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/359c0cfab1442555dcf02e771d0b9e9fa5912316",
+      "files": [
+        {
+          "filename": "backend/requirements.txt",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "0be91d9e850183708628dc60a580a98815ecf5ff",
+      "message": "fix: upgrade pip before installing requirements in build command",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:33:05Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/0be91d9e850183708628dc60a580a98815ecf5ff",
+      "files": [
+        {
+          "filename": "backend/render.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "changes": 2
+        }
+      ],
+      "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "sha": "e0899bdf6906b1c058f96302bfb4313857c0fb3b",
+      "message": "fix: remove pydantic_core and onnxruntime pins that require Rust compilation on Render",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:31:36Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/e0899bdf6906b1c058f96302bfb4313857c0fb3b",
+      "files": [
+        {
+          "filename": "backend/requirements.txt",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        }
+      ],
+      "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+      }
+    },
+    {
+      "sha": "3779c21f92b000e654e00f1d304ff32881579763",
+      "message": "fix: accept SUPABASE_URL as fallback in supabase_client.py",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:29:47Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/3779c21f92b000e654e00f1d304ff32881579763",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "5afba65f3f93523de05eb05ee4e584028dc091fc",
+      "message": "revert: restore full requirements.txt with resolved conflicts",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:09:58Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/5afba65f3f93523de05eb05ee4e584028dc091fc",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "431f47fc4444b43adb37f3df505c6ce574b45fc9",
+      "message": "fix: nuke all strict version dependencies to fix render pipeline once and for all",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:09:06Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/431f47fc4444b43adb37f3df505c6ce574b45fc9",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "bb83016e37da5482ae4bcad360e68baf022aad93",
+      "message": "fix: resolve pip dependency conflicts",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:06:57Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/bb83016e37da5482ae4bcad360e68baf022aad93",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "2e9070d42d43d98789777ac9dc471407a3caad1d",
+      "message": "fix: pin python version to 3.11 for render",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T13:03:06Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/2e9070d42d43d98789777ac9dc471407a3caad1d",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "33a9450e4f38b331070db28a093458346221827f",
+      "message": "fix: relax ortools version requirement for Render deployment",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T12:58:37Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/33a9450e4f38b331070db28a093458346221827f",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "6fafe5e1ed10827e935b81c4fc331540dfee8a9a",
+      "message": "chore: Update render.yaml with cloud toggle variables",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T12:55:40Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/6fafe5e1ed10827e935b81c4fc331540dfee8a9a",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "5f21ee9c720c399e02472f67c6d577c4ad6c0b78",
+      "message": "feat: Add explicit local/cloud toggle and fix production default fallback",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T12:48:52Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/5f21ee9c720c399e02472f67c6d577c4ad6c0b78",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "8ed1965cf57c35318c0bbede0a3ca76774033193",
+      "message": "docs: rewrite README to be hackathon-ready with better copy",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T12:21:42Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/8ed1965cf57c35318c0bbede0a3ca76774033193",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "c5d199e74f8263ce8b2af4c62dc731b427261b21",
+      "message": "fix(frontend): UI updates for simulator, map styling, and realtime analytics sync",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T12:12:47Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/c5d199e74f8263ce8b2af4c62dc731b427261b21",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "7f174abacf47a198820c03395f4ac769515e8579",
+      "message": "Fix Tailwind v4 font variable mappings for Noto Sans (Hindi support)",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T07:31:57Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/7f174abacf47a198820c03395f4ac769515e8579",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "203989eaa9d22a7b2a0b0ff5fb0f39600ee64601",
+      "message": "UX polish: back buttons, status transitions, auto-scroll, new order CTA, landing redirect",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T07:19:04Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/203989eaa9d22a7b2a0b0ff5fb0f39600ee64601",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "1eec13f1ebfcecbf7b6169aa3b93746f0e8cb8fb",
+      "message": "Fix 3 bugs: source DB constraint mismatch, DeliveryMap fake UUID fallback",
+      "author": "Aditya Rane",
+      "date": "2026-06-12T07:09:52Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/1eec13f1ebfcecbf7b6169aa3b93746f0e8cb8fb",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "b2a648b8609407d87a208a385e2e552feee0d5af",
+      "message": "Fix template literals for NEXT_PUBLIC_BACKEND_URL",
+      "author": "Aditya Rane",
+      "date": "2026-06-11T18:24:20Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/b2a648b8609407d87a208a385e2e552feee0d5af",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "61666090babd4a5e90ebae305b3cc3c141b2e052",
+      "message": "Set render plan to free tier",
+      "author": "Aditya Rane",
+      "date": "2026-06-11T18:14:27Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/61666090babd4a5e90ebae305b3cc3c141b2e052",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "0a8e813721d323a3f2fd1d0f000ff3e708c0a9a4",
+      "message": "Update render.yaml rootDir",
+      "author": "Aditya Rane",
+      "date": "2026-06-11T18:10:38Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/0a8e813721d323a3f2fd1d0f000ff3e708c0a9a4",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "8c941b682295be9c91aeece0f4d8be9d60753406",
+      "message": "Initial commit for SupplySetu AI",
+      "author": "Aditya Rane",
+      "date": "2026-06-11T18:08:17Z",
+      "url": "https://github.com/Adityarane012/SupplySetu-AI/commit/8c941b682295be9c91aeece0f4d8be9d60753406",
+      "files": [],
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    }
+  ]
+}
