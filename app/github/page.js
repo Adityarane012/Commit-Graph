@@ -13,7 +13,9 @@ export default function GitHubRepositories() {
     fetch('/api/repos')
       .then(res => res.json())
       .then(data => {
-        if (Array.isArray(data)) {
+        if (data.repos && Array.isArray(data.repos)) {
+          setRepos(data.repos);
+        } else if (Array.isArray(data)) {
           setRepos(data);
         }
         setLoading(false);
