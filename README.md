@@ -3,7 +3,8 @@
 > **AI-Assisted Feature Identification from Git Commit History**  
 > *Built for Hack Devengers 1.0 (August 2026)*
 
-![CommitGraph Dashboard](public/landing_screenshot.png) *(Note: Add actual screenshot here before submission)*
+![CommitGraph Dashboard](<img width="1892" height="866" alt="image" src="https://github.com/user-attachments/assets/f110cd30-6f39-4d8e-a757-1fd8eeee2635" />
+)
 
 ## 📖 Overview
 
