@@ -175,8 +175,8 @@ export default function RepoPage() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5 flex justify-center">
-        <div className="h-16 w-full px-margin-desktop flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5">
+        <div className="h-16 w-full px-4 lg:px-8 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="font-headline-md text-headline-md tracking-tight text-on-surface hover:text-primary transition-colors">CommitGraph</Link>
             <nav className="hidden md:flex items-center gap-8 ml-8">
@@ -200,8 +200,8 @@ export default function RepoPage() {
         </div>
       </header>
 
-      <main className="w-full pt-16 min-h-screen bg-surface flex flex-col items-center">
-        <div className="flex flex-col w-full px-margin-desktop font-body-md text-on-surface">
+      <main className="w-full pt-16 min-h-screen bg-surface">
+        <div className="flex flex-col w-full px-4 lg:px-8 font-body-md text-on-surface">
           <div className="relative w-full overflow-hidden">
             {/* Ambient Background */}
             <div className="absolute inset-0 pointer-events-none opacity-20 z-0 overflow-hidden">
@@ -408,7 +408,7 @@ export default function RepoPage() {
                         <div className="flex justify-between items-center mb-6">
                           <h2 className="font-headline-md text-headline-md text-on-surface">Feature Clusters</h2>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto pr-2 max-h-[700px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 overflow-y-auto pr-2 max-h-[700px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                           {results.featureGroups?.map((feature, i) => {
                             const conf = getDominantConfidence(feature);
                             const confColor = conf === 'high' ? 'text-[#4ade80] bg-[#0a2e16]/50 border-[#166534]/30' : 
