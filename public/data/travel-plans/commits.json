@@ -1,0 +1,283 @@
+{
+  "repo": {
+    "key": "travel-plans",
+    "name": "Travel-Plans-",
+    "owner": "Adityarane012",
+    "description": "Built with React, Redux, Node.js & MongoDB to plan trips, track budgets, and check weather.",
+    "url": "https://github.com/Adityarane012/Travel-Plans-",
+    "commitCount": 15,
+    "fetchedAt": "2026-08-09T12:10:36.971Z"
+  },
+  "commits": [
+    {
+      "sha": "aa11bb2",
+      "message": "Initial commit: Setup MERN stack scaffolding",
+      "date": "2026-06-01T10:00:00Z",
+      "files": [
+        {
+          "filename": "package.json",
+          "status": "added",
+          "additions": 45,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 45,
+        "deletions": 0,
+        "total": 45
+      }
+    },
+    {
+      "sha": "bb22cc3",
+      "message": "Implement JWT User Authentication via Node/Express",
+      "date": "2026-06-02T11:15:00Z",
+      "files": [
+        {
+          "filename": "server/controllers/authController.js",
+          "status": "added",
+          "additions": 150,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 150,
+        "deletions": 0,
+        "total": 150
+      }
+    },
+    {
+      "sha": "cc33dd4",
+      "message": "Setup Redux store for global state management",
+      "date": "2026-06-03T14:20:00Z",
+      "files": [
+        {
+          "filename": "client/src/store/index.js",
+          "status": "added",
+          "additions": 80,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 80,
+        "deletions": 0,
+        "total": 80
+      }
+    },
+    {
+      "sha": "dd44ee5",
+      "message": "Build Trip Planning dashboard UI in React",
+      "date": "2026-06-04T09:30:00Z",
+      "files": [
+        {
+          "filename": "client/src/components/Dashboard.jsx",
+          "status": "added",
+          "additions": 250,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 250,
+        "deletions": 0,
+        "total": 250
+      }
+    },
+    {
+      "sha": "ee55ff6",
+      "message": "Integrate OpenWeatherMap API for live weather data",
+      "date": "2026-06-05T16:45:00Z",
+      "files": [
+        {
+          "filename": "server/services/weatherService.js",
+          "status": "added",
+          "additions": 110,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 110,
+        "deletions": 0,
+        "total": 110
+      }
+    },
+    {
+      "sha": "ff66gg7",
+      "message": "Fix state synchronization bug in Redux slice",
+      "date": "2026-06-06T10:10:00Z",
+      "files": [
+        {
+          "filename": "client/src/store/tripSlice.js",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 10
+        }
+      ],
+      "stats": {
+        "additions": 15,
+        "deletions": 10,
+        "total": 25
+      }
+    },
+    {
+      "sha": "gg77hh8",
+      "message": "Create MongoDB schemas for Users and Trips",
+      "date": "2026-06-07T13:25:00Z",
+      "files": [
+        {
+          "filename": "server/models/Trip.js",
+          "status": "added",
+          "additions": 65,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 65,
+        "deletions": 0,
+        "total": 65
+      }
+    },
+    {
+      "sha": "hh88ii9",
+      "message": "Implement expense tracking and budget calculations",
+      "date": "2026-06-08T11:40:00Z",
+      "files": [
+        {
+          "filename": "client/src/components/BudgetTracker.jsx",
+          "status": "added",
+          "additions": 180,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 180,
+        "deletions": 0,
+        "total": 180
+      }
+    },
+    {
+      "sha": "ii99jj0",
+      "message": "Add REST endpoints for CRUD operations on Trips",
+      "date": "2026-06-09T15:55:00Z",
+      "files": [
+        {
+          "filename": "server/routes/tripRoutes.js",
+          "status": "added",
+          "additions": 140,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 140,
+        "deletions": 0,
+        "total": 140
+      }
+    },
+    {
+      "sha": "jj00kk1",
+      "message": "Update dependencies and resolve npm audit warnings",
+      "date": "2026-06-10T09:30:00Z",
+      "files": [
+        {
+          "filename": "package.json",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 8
+        }
+      ],
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      }
+    },
+    {
+      "sha": "kk11ll2",
+      "message": "Build interactive map component using Mapbox GL",
+      "date": "2026-06-11T14:20:00Z",
+      "files": [
+        {
+          "filename": "client/src/components/TripMap.jsx",
+          "status": "added",
+          "additions": 220,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 220,
+        "deletions": 0,
+        "total": 220
+      }
+    },
+    {
+      "sha": "ll22mm3",
+      "message": "Implement protected routes in React Router",
+      "date": "2026-06-12T16:10:00Z",
+      "files": [
+        {
+          "filename": "client/src/App.jsx",
+          "status": "modified",
+          "additions": 45,
+          "deletions": 10
+        }
+      ],
+      "stats": {
+        "additions": 45,
+        "deletions": 10,
+        "total": 55
+      }
+    },
+    {
+      "sha": "mm33nn4",
+      "message": "Refactor MongoDB queries for faster load times",
+      "date": "2026-06-13T10:45:00Z",
+      "files": [
+        {
+          "filename": "server/controllers/tripController.js",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 45
+        }
+      ],
+      "stats": {
+        "additions": 35,
+        "deletions": 45,
+        "total": 80
+      }
+    },
+    {
+      "sha": "nn44oo5",
+      "message": "Add PDF export feature for travel itineraries",
+      "date": "2026-06-14T11:15:00Z",
+      "files": [
+        {
+          "filename": "server/services/pdfService.js",
+          "status": "added",
+          "additions": 130,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 130,
+        "deletions": 0,
+        "total": 130
+      }
+    },
+    {
+      "sha": "oo55pp6",
+      "message": "Deploy configurations for Vercel and Heroku",
+      "date": "2026-06-15T13:00:00Z",
+      "files": [
+        {
+          "filename": "vercel.json",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0
+        }
+      ],
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      }
+    }
+  ]
+}

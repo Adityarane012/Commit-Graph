@@ -25,5 +25,23 @@
     "url": "https://github.com/Adityarane012/Memori",
     "commitCount": 30,
     "fetchedAt": "2026-08-09T11:38:00.000Z"
+  },
+  {
+    "key": "commitpulse",
+    "name": "commitpulse",
+    "owner": "Adityarane012",
+    "description": "A high-performance Next.js API that transforms raw GitHub contribution data into premium, 3D isometric monoliths.",
+    "url": "https://github.com/Adityarane012/commitpulse",
+    "commitCount": 15,
+    "fetchedAt": "2026-08-09T12:10:19.584Z"
+  },
+  {
+    "key": "travel-plans",
+    "name": "Travel-Plans-",
+    "owner": "Adityarane012",
+    "description": "Built with React, Redux, Node.js & MongoDB to plan trips, track budgets, and check weather.",
+    "url": "https://github.com/Adityarane012/Travel-Plans-",
+    "commitCount": 15,
+    "fetchedAt": "2026-08-09T12:10:36.971Z"
   }
 ]
