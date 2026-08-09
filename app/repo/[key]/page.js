@@ -175,8 +175,8 @@ export default function RepoPage() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5">
-        <div className="h-16 w-full px-margin-desktop flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.1)] border-b border-white/5 flex justify-center">
+        <div className="h-16 w-full max-w-[1440px] px-margin-desktop flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="font-headline-md text-headline-md tracking-tight text-on-surface hover:text-primary transition-colors">CommitGraph</Link>
             <nav className="hidden md:flex items-center gap-8 ml-8">
@@ -200,8 +200,8 @@ export default function RepoPage() {
         </div>
       </header>
 
-      <main className="w-full pt-16 px-margin-desktop min-h-screen bg-surface">
-        <div className="flex flex-col w-full font-body-md text-on-surface">
+      <main className="w-full pt-16 min-h-screen bg-surface flex flex-col items-center">
+        <div className="flex flex-col w-full max-w-[1440px] px-margin-desktop font-body-md text-on-surface">
           <div className="relative w-full overflow-hidden">
             {/* Ambient Background */}
             <div className="absolute inset-0 pointer-events-none opacity-20 z-0 overflow-hidden">
@@ -408,7 +408,7 @@ export default function RepoPage() {
                         <div className="flex justify-between items-center mb-6">
                           <h2 className="font-headline-md text-headline-md text-on-surface">Feature Clusters</h2>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto pr-2 max-h-[700px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto pr-2 max-h-[700px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                           {results.featureGroups?.map((feature, i) => {
                             const conf = getDominantConfidence(feature);
                             const confColor = conf === 'high' ? 'text-[#4ade80] bg-[#0a2e16]/50 border-[#166534]/30' : 
@@ -426,7 +426,7 @@ export default function RepoPage() {
                                     {conf} Conf.
                                   </div>
                                 </div>
-                                <div className="p-4 flex flex-col gap-3 max-h-[300px] overflow-y-auto">
+                                <div className="p-4 flex flex-col gap-3 max-h-[300px] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                                   {feature.commits.map((commit, j) => (
                                     <div key={j} className="flex flex-col gap-2 p-3 bg-surface-container-lowest/50 rounded border border-white/5">
                                       <span className="font-body-md text-[14px] text-on-surface">{commit.message.split('\n')[0]}</span>
@@ -452,7 +452,7 @@ export default function RepoPage() {
                         <div className="flex justify-between items-center mb-6">
                           <h2 className="font-headline-md text-headline-md text-on-surface">Commit Timeline</h2>
                         </div>
-                        <div className="flex flex-col gap-0 border-l-2 border-surface-container-highest ml-4 pl-6 relative max-h-[700px] overflow-y-auto">
+                        <div className="flex flex-col gap-0 border-l-2 border-surface-container-highest ml-4 pl-6 relative max-h-[700px] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                           {results.classifiedCommits?.map((commit, i) => {
                             const conf = commit.classification.confidence;
                             const confColor = conf === 'high' ? 'bg-[#4ade80]' : 
@@ -461,7 +461,7 @@ export default function RepoPage() {
                             
                             return (
                               <div key={i} className="relative pb-8 last:pb-0">
-                                <div className={`absolute -left-[31px] top-1 w-4 h-4 rounded-full ${confColor} shadow-[0_0_10px_currentColor] border-4 border-surface`}></div>
+                                <div className={`absolute -left-[31px] top-1 w-4 h-4 rounded-full ${confColor} shadow-[0_0_10px_currentColor] border-2 border-surface-container/80`}></div>
                                 <div className="flex flex-col bg-surface-container/40 p-4 rounded-lg border border-outline-variant/10">
                                   <div className="flex justify-between items-start mb-2">
                                     <span className="font-body-md font-medium text-on-surface">{commit.message.split('\n')[0]}</span>
