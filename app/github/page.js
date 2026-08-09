@@ -10,7 +10,7 @@ export default function GitHubRepositories() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch('https://api.github.com/users/Adityarane012/repos?per_page=100&sort=updated')
+    fetch('/api/repos')
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -19,7 +19,7 @@ export default function GitHubRepositories() {
         setLoading(false);
       })
       .catch(err => {
-        console.error("Failed to fetch GitHub repos", err);
+        console.error("Failed to fetch local repos", err);
         setLoading(false);
       });
   }, []);
@@ -79,13 +79,13 @@ export default function GitHubRepositories() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {loading ? (
-              <div className="text-on-surface-variant">Fetching from GitHub API...</div>
+              <div className="text-on-surface-variant">Fetching repositories...</div>
             ) : repos.map((repo) => (
               <a 
-                href={repo.html_url} 
+                href={repo.url} 
                 target="_blank" 
                 rel="noreferrer"
-                key={repo.id} 
+                key={repo.key} 
                 className="group relative bg-surface-container/40 hover:bg-surface-container-high/60 backdrop-blur-sm rounded-xl p-6 border border-white/5 transition-all duration-300 block"
               >
                 <div className="flex flex-col h-full justify-between gap-4">
@@ -100,19 +100,13 @@ export default function GitHubRepositories() {
                   </div>
                   
                   <div className="flex items-center gap-4 text-xs font-code-sm text-on-surface-variant/70 mt-2">
-                    {repo.language && (
-                      <div className="flex items-center gap-1.5">
-                        <span className="w-2.5 h-2.5 rounded-full bg-primary/50"></span>
-                        {repo.language}
-                      </div>
-                    )}
                     <div className="flex items-center gap-1.5">
-                      <span className="material-symbols-outlined text-[14px]">star</span>
-                      {repo.stargazers_count}
+                      <span className="material-symbols-outlined text-[14px]">call_split</span>
+                      {repo.commitCount} commits
                     </div>
                     <div className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-[14px]">update</span>
-                      {new Date(repo.updated_at).toLocaleDateString()}
+                      {new Date(repo.fetchedAt || Date.now()).toLocaleDateString()}
                     </div>
                   </div>
                 </div>
